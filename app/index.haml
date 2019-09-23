@@ -1,0 +1,105 @@
+!!!
+%html{ lang: 'en' }
+  %head
+    %meta{ charset: 'UTF-8' }/
+    %meta{ content: 'width=device-width, initial-scale=1.0', name:'viewport' }/
+    %title Natalia
+    %link{ rel: 'stylesheet', href:'assets/css/bootstrap.min.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/slick-theme.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/slick.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/main.css' }/
+    %link{ href:'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Roboto:400,500,700,900&display=swap',  rel:'stylesheet' }/
+  %body
+    %header.fixed-top.navbar-fixed-js
+      .main-prenavbar
+        .container
+          .row
+            .col-lg-6
+              .main-prenavbar__rrss.d-flex.align-items-center
+                %img{:src=> 'assets/img/phone-receiver.png'}
+                %a{:href=>""} (+57) 619 26 16 
+                %p -
+                %a{:href=>""} (+57) 215 45 23 
+
+            .col-lg-6
+            
+      %nav.navbar.navbar-expand-lg
+        .container
+          .main-brand__top
+            .main-brand
+              %a.navbar-brand{ :href => '#' }
+                %img#iso{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/ 
+          .main-brand__fixed
+            .main-brand
+              %a.navbar-brand{ :href => '#' }
+                %img#iso{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/ 
+          .main-brand.brand-responsive
+            %a.navbar-brand{ :href => '#' }
+              %img#iso{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/ 
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{ 'data-toggle' => 'offcanvas', :type => 'button' }
+              %span.hamburger-box
+              %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item
+                %a.nav-link{ :href => '#certifications', :data-toggle => 'offcanvas' } Soluciones
+              %li.nav-item
+                %a.nav-link#clients{ :href => '#clients' } Desafíos
+              %li.nav-item
+                %a.nav-link{ :href => '#benefits' } Oportunidades laborales
+              %li.nav-item
+                %a.nav-link{:href => '#contact',:data-toggle => 'offcanvas' } Tendencias
+              %li.nav-item
+                %a.nav-link{:href => '#contact',:data-toggle => 'offcanvas' } Conócenos
+    
+    
+    %section.main-banner
+      .main-banner__content
+        .main-banner__item
+          .main-banner__text
+            .main-banner__logo
+              %img{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
+            .main-banner__title
+              %p Lorem Ipsum
+            .main-banner__subtitle 
+              %p  
+                dolor sit amet consectetur, a
+                dipiscing elit aptent.
+          .main-banner__img
+            %img{ :src => 'assets/img/image.png' }/
+        .main-banner__item
+          .main-banner__text
+            %img{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
+            .main-banner__title
+              %p Lorem Ipsum
+            .main-banner__subtitle 
+              %p  
+                dolor sit amet consectetur, a
+                dipiscing elit aptent.
+          .main-banner__img
+            %img{ :src => 'assets/img/image.png' }/
+
+
+    %footer.main-contact#contact 
+      .container.padding-top-bottom
+        %h2.main-general__title
+          Contáctanos
+        .main-footer__container
+          %form
+            %input{ :type=>'text', :placeholder=>'Nombre' }/
+            %input{ :type=>'mail', :placeholder=>'Correo Electrónico' }/
+            %input{ :type=>'number', :placeholder=>'Número telefónico' }/
+            %input{ :type=>'text', :placeholder=>'Asunto' }/
+            %textarea{ :placeholder=>'Mensaje' }
+            %a.main-general__button{ :href => '#' } Enviar
+    .main-powered  
+      %p
+        Copyright ©2019 Todos los derechos reservados | Diseño y desarrollo por 
+        %a{ :href=>'https://cmarketing.cl/' } Contact Marketing
+    %script{src: 'assets/js/jquery.min.js' }
+    %script{src: 'assets/js/bootstrap.min.js' }
+    %script{src: 'assets/js/slick.min.js' }
+    %script{src: 'assets/js/setting-slick.js' }
+    %script{src: 'assets/js/main.js' }
