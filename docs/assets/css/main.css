@@ -1273,3 +1273,12 @@ button:focus {
   padding: 3rem 2rem;
   background: #fff;
 }
+
+.main-contact {
+  background-image: url("../img/bg.png");
+  color: #fff;
+}
+
+.main-contact .main-general__title {
+  color: #fff;
+}

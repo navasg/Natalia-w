@@ -678,3 +678,16 @@ button:focus {
     background: $white;
   }
 }
+
+.main-contact {
+  background-image: url('../img/bg.png');
+  color: $white;
+
+  & .main-general__title {
+    color: $white;
+  }
+
+  & .main-contact__button {
+    
+  }
+}
