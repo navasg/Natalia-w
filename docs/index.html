@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Natalia</title>
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
   <link href="assets/css/font-awesome.css" rel="stylesheet">
   <link href="assets/css/font-awesome.css" rel="stylesheet">
   <link href="assets/css/slick-theme.css" rel="stylesheet">
@@ -19,7 +19,7 @@
     <div class="main-prenavbar">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 d-flex align-items-center">
             <div class="main-prenavbar__rrss d-flex align-items-center">
               <img src="assets/img/phone-receiver.png">
               <a href="">(+57) 619 26 16</a>
@@ -27,7 +27,50 @@
               <a href="">(+57) 215 45 23</a>
             </div>
           </div>
-          <div class="col-lg-6"></div>
+          <div class="col-lg-6">
+            <ul class="main-prenavbar__rrss d-flex align-items-center">
+              <li>
+                <a href="">
+<img src="assets/img/social-linkedin-circular-button_4.png">
+</a>
+              </li>
+              <li>
+                <a href="">
+<img src="assets/img/facebook-logo-in-circular-button-outlined-social-symbol_2.png">
+</a>
+              </li>
+              <li>
+                <a href="">
+<img src="assets/img/social-linkedin-circular-button_5.png">
+</a>
+              </li>
+              <li>
+                <a href="">
+<img src="assets/img/social-linkedin-circular-button_6.png">
+</a>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle" data-toggle="dropdown" href="#" id="dropdownMenuLink" role="button">
+Dropdown link
+</a>
+                  <div aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="">
+<img src="assets/img/shape.png">
+</a>
+              </li>
+              <li>
+                <a class="main-prenavbar__button" href="">CONTÁCTANOS</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -116,6 +159,82 @@
       </div>
     </div>
   </section>
+  <section class="main-cal">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="main-cal__item">
+            <p class="main-cal__title">
+              +40.000
+            </p>
+            <p class="main-cal__subtitle">
+              Personas impactadas en los últimos años con nuestros programas de atracción
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="main-cal__item">
+            <img class="main-cal__img" src="assets/img/user.png">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="main-cal__item">
+            <p class="main-cal__title">
+              +800
+            </p>
+            <p class="main-cal__subtitle">
+              Personas han sido vinculadas con las mejores empresas.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="main-cal__item">
+            <img class="main-cal__img" src="assets/img/identification.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main-alliance">
+    <div class="container padding-top-bottom">
+      <h2 class="main-general__title">
+        Alianzas
+      </h2>
+      <p class="main-general__subtitle">
+        LOREM IPSUM
+      </p>
+      <div class="main-alliance__description">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipiscing elit habitasse euismod, nullam accumsan imperdiet viverra. Platea vivamus diam habitasse suscipit suspendisse purus non felis facilisis, volutpat consequat et neque nisl cum blandit eget feugiat, augue
+          fermentum ut mi hendrerit rhoncus in sapien.
+        </p>
+      </div>
+      <div class="main-alliance__container">
+        <div class="main-alliance__item">
+          <div class="main-alliance__img">
+            <img src="assets/img/alianza-imagen-1.png">
+          </div>
+          <div class="main-alliance__details">
+            <a href="">
+<img class="main-alliance__icon" src="assets/img/play-button-1-copy.png">
+</a>
+            <a class="main-alliance__button" href="">Ver Más</a>
+          </div>
+        </div>
+        <div class="main-alliance__item">
+          <div class="main-alliance__img">
+            <img src="assets/img/captura-de-pantalla-2019-06-12-a-la-s-4-28-47-p-m.png">
+          </div>
+          <div class="main-alliance__details">
+            <a href="">
+<img class="main-alliance__icon" src="assets/img/play-button-1-copy.png">
+</a>
+            <a class="main-alliance__button" href="">Ver Más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer class="main-contact" id="contact">
     <div class="container padding-top-bottom">
       <h2 class="main-general__title">
@@ -139,8 +258,9 @@
       <a href="https://cmarketing.cl/">Contact Marketing</a>
     </p>
   </div>
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/setting-slick.js"></script>
   <script src="assets/js/main.js"></script>
