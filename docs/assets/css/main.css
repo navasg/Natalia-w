@@ -1045,6 +1045,10 @@ button:focus {
   object-fit: cover;
 }
 
+.main-cal {
+  background: #f5f5f5;
+}
+
 .main-cal .col-lg-3:nth-child(1) {
   background: #20376f;
 }
@@ -1149,7 +1153,25 @@ button:focus {
 .main-solutions {
   background: #f5f5f5;
   display: flex;
+  font-weight: 600;
+  font-size: .9rem;
   justify-content: center;
+}
+
+.main-solutions .main-solutions__button {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.main-solutions .main-solutions__button a {
+  border-radius: 20px;
+  border: solid 2px #d8d8d8;
+  text-transform: uppercase;
+  color: #888888;
+  font-size: .8rem;
+  padding: .6rem 1rem;
+  letter-spacing: 4.2px;
 }
 
 .main-solutions .main-general__subtitle {
@@ -1163,12 +1185,20 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem .5rem;
+  padding: 2.5rem .5rem;
 }
 
 .main-solutions .main-solutions__item .main-solutions__text p {
   margin-top: 1rem;
   margin-bottom: 0;
+}
+
+.main-solutions .main-solutions__item .main-solutions__text .main-solutions__more {
+  font-size: 1.5rem;
+  margin-top: 0;
+  position: absolute;
+  right: 1rem;
+  bottom: .5rem;
 }
 
 .main-solutions .main-solutions__colum:nth-child(odd) {
@@ -1191,239 +1221,55 @@ button:focus {
   width: 57%;
 }
 
-.main-contact {
+.main-featured {
   background: #f5f5f5;
 }
 
-.main-contact form {
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main-featured .main-featured__card {
+  height: 27rem;
+  margin-top: 2rem;
 }
 
-.main-contact form input {
-  width: 100%;
-  padding: .5rem 1rem;
-  border: none;
-  box-shadow: 0 0 2px #ddd;
-  margin-bottom: .5rem;
+.main-featured .main-featured__card .main-featured__title {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
-.main-contact form textarea {
-  width: 100%;
-  padding: .5rem 1rem;
-  height: 5rem;
-  resize: none;
-  box-shadow: 0 0 2px #ddd;
-  border: none;
-}
-
-@media (min-width: 0px) and (max-width: 767px) {
-  .main-contact form {
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .main-contact form {
-    width: 100%;
-  }
-}
-
-.main-contact .main-footer__container {
-  display: flex;
-  justify-content: center;
-}
-
-.main-powered {
+.main-featured .main-featured__card .main-featured__description {
   text-align: center;
-  padding: 1rem 0;
-  background: #3e3e3e;
-  color: #fff;
 }
 
-.main-powered a {
-  color: #fff;
-  font-weight: 600;
+.main-featured .main-featured__card .main-featured__bg {
+  height: 60%;
+  position: relative;
 }
 
-.main-powered p {
-  margin-bottom: 0;
-}
-
-.main-details {
-  background: #f5f5f5;
-}
-
-.main-details .padding-top-bottom {
-  padding-bottom: 0;
-}
-
-.main-details .main-details__img img {
-  width: 100%;
-  margin-left: -1.5rem;
-  margin-top: 3rem;
-}
-
-.main-details .main-details__description {
-  width: 80%;
-  margin-right: .5rem;
-  margin-left: .5rem;
-}
-
-.main-details .main-details__title {
-  font-size: 1.5rem;
-}
-
-.main-details .main-details__item {
-  display: flex;
-  width: 100%;
-  margin-bottom: 2rem;
-  min-height: 11rem;
-}
-
-.main-details .main-details__item img {
-  width: 6rem;
-  height: 6rem;
-  object-fit: cover;
-  border-radius: 50%;
-  background: #056cb6;
-  border: 5px double #fff;
-}
-
-@media (min-width: 0px) and (max-width: 767px) {
-  .main-comparison .padding-top-bottom {
-    padding-top: 0;
-  }
-}
-
-.main-comparison img {
-  width: 90%;
-  object-fit: contain;
-}
-
-@media (min-width: 0px) and (max-width: 767px) {
-  .main-comparison img {
-    width: 100%;
-  }
-}
-
-.main-comparison .main-comparison__img--blue {
-  color: #8fdbea;
-  filter: drop-shadow(-3px 1px 7px);
-}
-
-.main-comparison h2 {
-  margin-bottom: 1rem;
-}
-
-.main-comparison .main-comparison__img--yellow {
-  color: #e2c83c;
-  filter: drop-shadow(-3px 1px 7px);
-}
-
-.main-comparison .main-comparison__icon {
-  width: 4rem;
-  padding: 1rem;
-  background: whitesmoke;
-  border-radius: 50%;
-}
-
-.main-comparison .main-comparison__list {
-  list-style: none;
-  padding: 0;
-  margin-right: 1rem;
-}
-
-.main-comparison .main-comparison__list li {
-  margin-bottom: .5rem;
-}
-
-.main-comparison .main-comparison__box-icon {
-  display: flex;
-}
-
-@media (min-width: 0px) and (max-width: 767px) {
-  .main-comparison .main-comparison__box-icon {
-    display: initial;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .main-comparison .main-comparison__box-icon {
-    justify-content: center;
-  }
-}
-
-.main-comparison .main-comparison__flex {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.main-comparison .main-comparison__margin {
-  margin-top: 3rem;
-}
-
-.card {
-  border: 0;
-}
-
-.card-header {
-  background-color: #fff;
-  margin-bottom: 0 !important;
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
-}
-
-.faq-btn {
-  color: #056cb6;
-  font-family: 'Poppins', sans-serif;
-  width: 100%;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.faq-btn:hover, .faq-btn:focus {
-  text-decoration: none;
-  color: #056cb6;
-}
-
-.faq-btn[aria-expanded="true"] i {
-  transform: rotate(-90deg);
-}
-
-.main-video .main-video__bg {
+.main-featured .main-featured__card .main-featured__bg img {
   width: 100%;
   height: 100%;
+}
+
+.main-featured .main-featured__card .main-featured__bg .main-featured__date {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 2rem;
+  left: 2rem;
+  justify-content: center;
+  border: 1px solid #fff;
+  color: #fff;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.main-video .main-video__bg video {
-  width: 100%;
+.main-featured .main-featured__card .main-featured__bg .main-featured__date p {
+  margin-bottom: 0;
+  font-size: .8rem;
+  font-weight: bold;
 }
 
-.main-video .main-general__title {
-  margin-top: 0;
-  margin-bottom: 2.5rem;
-}
-
-.main-video ul {
-  list-style: none;
-  padding: 0;
-}
-
-.main-video ul li {
-  margin-right: 1rem;
-}
-
-.main-video ul li h2 {
-  font-size: 1.5rem;
-}
-
-.main-video ul li p {
-  margin-bottom: 2rem;
+.main-featured .main-featured__body {
+  padding: 3rem 2rem;
+  background: #fff;
 }
