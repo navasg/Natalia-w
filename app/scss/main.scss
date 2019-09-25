@@ -76,7 +76,17 @@ body {
   background: $blue;
   padding: .8rem;
   font-size: .9rem;
+  .main-rrss_phone {
+    @include respond-to(xs) {
+      display: none!important;
+    }
+  }
+  & li:nth-child(1), li:nth-child(2), li:nth-child(3), li:nth-child(4) , li:nth-child(7) {
 
+    @include respond-to(xs) {
+      display: none;
+    } 
+  }
   & a, & p {
     color: $white;
     font-weight: 600;
@@ -103,9 +113,11 @@ body {
   .main-prenavbar__rrss {  
     list-style: none;
     margin-bottom: 0;
+    
 
     @include respond-to(xs) {
       padding-left: 0;
+      justify-content: space-between
     }
 
     & p {
@@ -232,6 +244,26 @@ button:focus {
     box-shadow:rgba(191,191,191,0.72) 2px 1px 8px;
     transition: .3s ease-in-out;
   }
+
+  .main-rrss__responsive {
+    display: none;
+
+    @include respond-to(xs) {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+
+      & img {
+        @include respond-to(xs) {
+          width: 54px;
+          height: 54px;;
+        }
+      }
+    } 
+  }
 }
 
 .contact {
@@ -244,7 +276,6 @@ button:focus {
   // display: flex;
   // align-items: center;
   @include respond-to(xs) {
-    padding: 0 15px;
   }
 
   & a {
@@ -278,7 +309,7 @@ button:focus {
     padding-left: 1.2rem!important;
 
   @include respond-to(xs) {
-    color: $lightBlack;
+    color: $white;
   }
 
   @include respond-to(sm) {

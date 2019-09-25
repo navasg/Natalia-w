@@ -10,7 +10,7 @@ body {
 @media (max-width: 768px) {
   .offcanvas-collapse {
     position: fixed;
-    top: 5rem;    /* Height of navbar */
+    top: 8.5rem;    /* Height of navbar */
     bottom: 0;
     left: 100%;
     width: 100%;
@@ -18,7 +18,7 @@ body {
     padding-left: 1rem;
     overflow-y: auto;
     visibility: hidden;
-    background-color: $white;
+    background-color: $blue;
     transition-timing-function: ease-in-out;
     transition-duration: .3s;
     transition-property: left, visibility;
