@@ -1103,6 +1103,12 @@ button:focus {
   letter-spacing: 4.2px;
 }
 
+.main-solutions .main-solutions__button a:hover {
+  border: solid 2px #056cb6;
+  text-transform: uppercase;
+  color: #056cb6;
+}
+
 .main-solutions .main-general__subtitle {
   margin-bottom: 4rem;
 }

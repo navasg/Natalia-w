@@ -10,6 +10,8 @@
     %link{ rel: 'stylesheet', href:'assets/css/slick-theme.css' }/
     %link{ rel: 'stylesheet', href:'assets/css/slick.css' }/
     %link{ rel: 'stylesheet', href:'assets/css/main.css' }/
+    %link{ rel: 'stylesheet', href:'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css' }/
+
     %link{ href:'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Roboto:400,500,700,900&display=swap',  rel:'stylesheet' }/
   %body
     %header.fixed-top.navbar-fixed-js
@@ -129,7 +131,7 @@
               %img.main-cal__img{ :src => 'assets/img/identification.png' }/
     %section.main-alliance
       .container.padding-top-bottom
-        %h2.main-general__title
+        %h2.main-general__title.fadeInUp.animated
           Alianzas 
         %p.main-general__subtitle 
           LOREM IPSUM
@@ -154,7 +156,7 @@
     %section.main-solutions
       .main-solutions__width
         .container.padding-top-bottom
-          %h2.main-general__title
+          %h2.main-general__title.fadeInUp.animated
             Soluciones 
           %p.main-general__subtitle 
             LOREM IPSUM
@@ -245,7 +247,7 @@
                 %img{:src=>'assets/img/captura-6.png'}
     %section.main-featured
       .container.padding-top-bottom
-        %h2.main-general__title
+        %h2.main-general__title.fadeInUp.animated
           Tendencias 
         %p.main-general__subtitle 
           LOREM IPSUM
@@ -296,7 +298,7 @@
           %a{:href=>""} Ver Más
     %section.main-contact
       .container.padding-top-bottom
-        %h2.main-general__title
+        %h2.main-general__title.fadeInUp.animated
           Contáctanos
         .main-contact__text 
           %p
@@ -400,3 +402,5 @@
     %script{src: 'assets/js/slick.min.js' }
     %script{src: 'assets/js/setting-slick.js' }
     %script{src: 'assets/js/main.js' }
+    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js' }
+

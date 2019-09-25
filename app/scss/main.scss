@@ -597,6 +597,12 @@ button:focus {
     font-size: .8rem;
     padding: .6rem 1rem;
     letter-spacing: 4.2px;
+
+    &:hover {
+      border: solid 2px #056cb6;
+      text-transform: uppercase;
+      color: #056cb6;
+    }
   }
 }
 
