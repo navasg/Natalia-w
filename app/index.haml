@@ -3,7 +3,7 @@
   %head
     %meta{ charset: 'UTF-8' }/
     %meta{ content: 'width=device-width, initial-scale=1.0', name:'viewport' }/
-    %title Natalia
+    %title Natalia Godoy - Consultores Organizacionales
     %link{:crossorigin => "anonymous", :href => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", :integrity => "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", :rel => "stylesheet"}/
     %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
     %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
@@ -50,10 +50,6 @@
                     %img{:src=> 'assets/img/shape.png'}                  
                 %li
                   %a.main-prenavbar__button{:href=>""} CONTÁCTANOS
-                    
-
-
-
       %nav.navbar.navbar-expand-lg
         .container
           .main-brand__top
@@ -73,13 +69,13 @@
           .navbar-collapse.offcanvas-collapse
             %ul.navbar-nav.mr-autos
               %li.nav-item
-                %a.nav-link{ :href => '#certifications', :data-toggle => 'offcanvas' } Soluciones
+                %a.nav-link{ :href => '#solutions', :data-toggle => 'offcanvas' } Soluciones
               %li.nav-item
-                %a.nav-link#clients{ :href => '#clients' } Desafíos
+                %a.nav-link#clients{ :href => '#' } Desafíos
               %li.nav-item
-                %a.nav-link{ :href => '#benefits' } Oportunidades laborales
+                %a.nav-link{ :href => '#' } Oportunidades laborales
               %li.nav-item
-                %a.nav-link{:href => '#contact',:data-toggle => 'offcanvas' } Tendencias
+                %a.nav-link{:href => '#',:data-toggle => 'offcanvas' } Tendencias
               %li.nav-item
                 %a.nav-link{:href => '#contact',:data-toggle => 'offcanvas' } Conócenos
     %section.main-banner
@@ -153,7 +149,7 @@
               %a{:href=>''}
                 %img.main-alliance__icon{ :src => 'assets/img/play-button-1-copy.png' }/
               %a.main-alliance__button{:href=>''}Ver Más
-    %section.main-solutions
+    %section.main-solutions#solutions
       .main-solutions__width
         .container.padding-top-bottom
           %h2.main-general__title.fadeInUp.animated.wow
@@ -305,7 +301,7 @@
             Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque cursus lobortis interdum, tincidunt proin dui lacinia eros dignissim sollicitudin cras nisi. 
         .main-general__button 
           %a{:href=>""} Ver Más
-    %footer.main-footer
+    %footer.main-footer#contact
       .main-footer__rrss
         .container
           .row  
@@ -379,23 +375,6 @@
                   Instagram
               .main-footer__instagram
                 %img{:src=>'assets/img/group-2.png'}
-                
-    -# %footer.main-contact#contact 
-    -#   .container.padding-top-bottom
-    -#     %h2.main-general__title
-    -#       Contáctanos
-    -#     .main-footer__container
-    -#       %form
-    -#         %input{ :type=>'text', :placeholder=>'Nombre' }/
-    -#         %input{ :type=>'mail', :placeholder=>'Correo Electrónico' }/
-    -#         %input{ :type=>'number', :placeholder=>'Número telefónico' }/
-    -#         %input{ :type=>'text', :placeholder=>'Asunto' }/
-    -#         %textarea{ :placeholder=>'Mensaje' }
-    -#         %a.main-general__button{ :href => '#' } Enviar
-    -# .main-powered  
-    -#   %p
-    -#     Copyright ©2019 Todos los derechos reservados | Diseño y desarrollo por 
-    -#     %a{ :href=>'https://cmarketing.cl/' } Contact Marketing
     %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"}
