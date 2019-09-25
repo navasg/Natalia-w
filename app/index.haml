@@ -96,7 +96,8 @@
             %img{ :src => 'assets/img/image.png' }/
         .main-banner__item
           .main-banner__text
-            %img{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
+            .main-banner__logo
+              %img{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
             .main-banner__title
               %p Lorem Ipsum
             .main-banner__subtitle 
@@ -105,7 +106,6 @@
                 dipiscing elit aptent.
           .main-banner__img
             %img{ :src => 'assets/img/image.png' }/
-
     %section.main-cal
       .container
         .row
@@ -227,6 +227,22 @@
                     Investigaciones analisis y desarrollo de contenidos y tendencias
           .main-solutions__button
             %a{:href=>""} Ver Más
+    %section.main-experience 
+      .container.padding-top-bottom
+        .row
+          .col-lg-6
+            %h2.main-general__title
+              Experiencias de éxito 
+            %p.main-experience__description 
+              Aliados en Colombia desde hace 4 años con Cia de Talentos, consultora de origen brasileño, especializada en la atracción, selección y desarrollo de personas, desde el inicio de sus carreras (practicantes, trainees, jóvenes profesionales, MBAs) hasta las posiciones de más alto nivel.
+            %p.main-experience__description 
+              Actúa desde hace 25 años en Latinoamérica, y su portafolio de clientes, particularmente en el segmento de jóvenes, la convirtió en la compañía de referencia en el sector. Cia de Talentos entrega servicios a nivel global, con más de 800 clientes y un centenar de profesionales en su plantel. Tiene oficinas propias en Brasil, Argentina y México y alianzas locales en América Central, Chile, Colombia y Perú.  
+          .col-lg-6
+            .main-experience__carousel
+              .main-experiencie__item
+                %img{:src=>'assets/img/captura-6.png'}
+              .main-experiencie__item
+                %img{:src=>'assets/img/captura-6.png'}
     %section.main-featured
       .container.padding-top-bottom
         %h2.main-general__title
@@ -311,14 +327,57 @@
                 %a{:href=>""}
                   %img{:src=> "assets/img/social-linkedin-circular-button_2.png"}
                   Youtube 
+      .main-footer__info
+        .main-footer__service.d-flex.justify-content-center
+          %img{:src=>"assets/img/group-12.png"}/
+        .container.padding-top-bottom
+          .row
+            .col-lg-4
+              .main-footer__logo
+                %img{:src=>'assets/img/logo.png'}
+              %ul.main-footer__list
+                %li.d-flex.align-items-center
+                  %img{:src=>"assets/img/facebook-places.png" }/
+                  %p 
+                    Calle 123 N° 7 - 07 Oficina 304 y 207
+                %li.d-flex.align-items-center
+                  %img{:src=>"assets/img/phone-receiver_2.png" }/
+                  %p
+                    (+57) 619 46 16 - (+57) 215 45 23 - (+57) 637 50 17
+                %li
+                  %img{:src=>"assets/img/envelope.png" }/
+                  %a{:href=>'mailto:contacto@consultoresorg.com'} contacto@consultoresorg.com
+            .col-lg-4
+              .main-footer__logo
+                %h2.main-footer__title
+                  Mapa del sitio
+              %ul.main-footer__link
+                %li 
+                  %a{:href=>''}
+                    Soluciones
+                %li 
+                  %a{:href=>''}
+                    Desafíos
+                %li 
+                  %a{:href=>''}
+                    Oportunidades laborales
+                %li 
+                  %a{:href=>''}
+                    Tendencias
+                %li 
+                  %a{:href=>''}
+                    Conócenos
+                %li 
+                  %a{:href=>''}
+                    Contáctanos
+
+            .col-lg-4
+              .main-footer__logo
+                %h2.main-footer__title
+                  Instagram
+              .main-footer__instagram
+                %img{:src=>'assets/img/group-2.png'}
                 
-
-
-
-
-        
-
-
     -# %footer.main-contact#contact 
     -#   .container.padding-top-bottom
     -#     %h2.main-general__title

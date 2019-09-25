@@ -628,6 +628,10 @@ button:focus {
     }
   }
 
+  & .main-solutions__colum {
+    border: 1px solid #fff;
+  }
+
   & .main-solutions__colum:nth-child(odd) {
     background: $graycard;
   }
@@ -649,6 +653,36 @@ button:focus {
   }
 }
 
+.main-experience {
+  .main-experiencie__item {
+    display: flex;
+    justify-content: center;
+  }
+  .main-general__title {
+    text-align: initial;
+    margin-bottom: 3rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #056cb6;
+      width: 3.5rem;
+      height: 4px;
+      left: 2px;
+      bottom: -1.5rem;
+    }
+  } 
+
+  & .main-experience__description {
+    line-height: 22px;
+    color: $gray2;
+    padding-right: 1rem;
+  }
+
+
+}
+
 .main-featured {
   background: #f5f5f5;
 
@@ -659,6 +693,13 @@ button:focus {
   & .main-featured__card {
     height: 27rem;
     margin-top: 2rem;
+    transition: .4s;
+
+    &:hover {
+      box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+      transition: .5s;
+      transform: translateY(-5px);
+    }
   
     & .main-featured__title {
       font-size: 1.1rem;
@@ -711,6 +752,8 @@ button:focus {
   background-image: url('../img/bg.png');
   color: $white;
   display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -735,13 +778,42 @@ button:focus {
     margin-top: 1rem;
     & a{
       color: $white;
-      border-color: $white;    
-      padding: .6rem 2rem;
-    }
+       display: flex;
+    justify-content: center;
+       display: flex;
+    justify-content: center;
+       display: flex;
+    justify-content: center;
+  }    display: flex;
+    justify-content: center;
   }
 }
 
 .main-footer {
+  & .main-footer__info {
+    background: #343434;
+  }
+
+  .main-footer__card {
+    &:hover {
+      transition: .5s;
+      background: $blue;
+      color: $white;
+      
+    }
+  }
+
+  & .main-footer__logo {
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  & .main-footer__service {
+    & img {
+      margin-top: 4rem;
+    }
+  }
   & .main-footer__rrss {
     background: #373737;
     color: $white;
@@ -754,16 +826,58 @@ button:focus {
     justify-content: center;
     transition: .5s;
 
-    &:hover {
-      transition: .5s;
-      background: $blue;
-      color: $white;
-      
-    }
+   
 
     & a {
       margin-bottom: 0;
       color: $white;
+    }
+  }
+
+  & .main-footer__list {
+    list-style: none;
+    margin-top: 1.5rem;
+
+    padding-left: 0;
+
+    & li {
+      margin-bottom: 1rem;
+      color: #717171;
+
+      & p {
+        margin-bottom: 0;
+      }
+
+      & img {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  & .main-footer__title {
+    text-transform: uppercase;
+    color: $white;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+
+  & .main-footer__instagram {
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .main-footer__link {
+    list-style: none;
+    padding-left: 0;
+
+    & li {
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+
+      & a {
+        color: #717171;
+      }
     }
   }
 }

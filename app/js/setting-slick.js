@@ -35,10 +35,9 @@ $('.main-banner__content').slick({
   ]
 });
 
-$('.main-certifications__carousel').slick({
-  infinite: true,
-  slidesToShow: 7,
-  slidesToScroll: 7,
+$('.main-experience__carousel').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
   dots: false,
   arrows: true,
   responsive: [{
