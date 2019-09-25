@@ -53,12 +53,21 @@ body {
   & a {
     border-radius: 20px;
     border: solid 2px #d8d8d8;
+  transition: .5s;
+
     text-transform: uppercase;
     color: #888888;
     font-weight: bold;
     font-size: .8rem;
     padding: .6rem 1rem;
     letter-spacing: 4.2px;
+
+    &:hover {
+      border: solid 2px #056cb6;
+      text-transform: uppercase;
+      color: #056cb6;
+      transition: .5s;
+    }
   }
 }
 
@@ -279,7 +288,7 @@ button:focus {
   }
 
   &:hover {
-    color: $black;
+    color: $blue;
   }
 }
 
@@ -530,6 +539,7 @@ button:focus {
   .main-alliance__container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
 
@@ -556,6 +566,16 @@ button:focus {
         padding: .3rem .5rem;
         letter-spacing: 4.2px;
         margin-left: 1rem;
+        transition: .5s;
+
+        &:hover {
+       
+            border: solid 2px #056cb6;
+            text-transform: uppercase;
+            color: #056cb6;
+            transition: .5s;
+          
+        }
       }
 
     }
@@ -598,11 +618,7 @@ button:focus {
     padding: .6rem 1rem;
     letter-spacing: 4.2px;
 
-    &:hover {
-      border: solid 2px #056cb6;
-      text-transform: uppercase;
-      color: #056cb6;
-    }
+ 
   }
 }
 
@@ -656,6 +672,10 @@ button:focus {
 
   & .main-solutions__width {
     width: 57%;
+
+    @include respond-to(xs) {
+      width: 100%;
+    }
   }
 }
 
@@ -700,6 +720,10 @@ button:focus {
     height: 27rem;
     margin-top: 2rem;
     transition: .4s;
+
+    @include respond-to(xs) {
+      margin-bottom: 2rem;
+    }
 
     &:hover {
       box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
@@ -777,6 +801,10 @@ button:focus {
     & p {
       width: 55%;
       text-align: center;
+
+      @include respond-to(xs) {
+        width: 100%;
+      }
     }
   }
 
@@ -789,9 +817,16 @@ button:focus {
        display: flex;
     justify-content: center;
        display: flex;
-    justify-content: center;
-  }    display: flex;
-    justify-content: center;
+      transition: .5s;
+
+    justify-content: center;    
+  }    
+
+
+  
+  
+  display: flex;
+  justify-content: center;
   }
 }
 
@@ -801,6 +836,8 @@ button:focus {
   }
 
   .main-footer__card {
+    transition: .5s;
+
     &:hover {
       transition: .5s;
       background: $blue;
@@ -813,6 +850,10 @@ button:focus {
     height: 4.5rem;
     display: flex;
     align-items: center;
+
+    @include respond-to(xs) {
+      justify-content: center;
+    }
   }
 
   & .main-footer__service {
@@ -849,6 +890,10 @@ button:focus {
     & li {
       margin-bottom: 1rem;
       color: #717171;
+
+      @include respond-to(xs) {
+        margin: 1.5rem 0;
+      }
 
       & p {
         margin-bottom: 0;

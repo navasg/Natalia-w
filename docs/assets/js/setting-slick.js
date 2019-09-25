@@ -43,8 +43,8 @@ $('.main-experience__carousel').slick({
   responsive: [{
     breakpoint: 1200,
     settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: 1,
+      slidesToScroll: 1,
       infinite: true,
       dots: true
     }
@@ -52,8 +52,8 @@ $('.main-experience__carousel').slick({
   {
     breakpoint: 900,
     settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToShow: 1,
+      slidesToScroll: 1
     }
   },
   {

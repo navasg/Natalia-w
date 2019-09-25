@@ -342,6 +342,12 @@ body {
   cursor: pointer;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-experience__carousel .slick-prev {
+    left: 0;
+  }
+}
+
 .main-experience__carousel .slick-prev:before {
   font-size: 14px;
   color: #fff;
@@ -365,6 +371,12 @@ body {
   top: 55%;
   width: 44px;
   height: 78px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-experience__carousel .slick-next {
+    right: 0;
+  }
 }
 
 .main-experience__carousel .slick-next:before {
@@ -546,12 +558,20 @@ body :focus {
 .main-general__button a {
   border-radius: 20px;
   border: solid 2px #d8d8d8;
+  transition: .5s;
   text-transform: uppercase;
   color: #888888;
   font-weight: bold;
   font-size: .8rem;
   padding: .6rem 1rem;
   letter-spacing: 4.2px;
+}
+
+.main-general__button a:hover {
+  border: solid 2px #056cb6;
+  text-transform: uppercase;
+  color: #056cb6;
+  transition: .5s;
 }
 
 .main-prenavbar {
@@ -777,7 +797,7 @@ button:focus {
 }
 
 .nav-link:hover {
-  color: #000;
+  color: #056cb6;
 }
 
 .navbar-brand {
@@ -1039,6 +1059,7 @@ button:focus {
 .main-alliance .main-alliance__container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .main-alliance .main-alliance__item {
@@ -1065,6 +1086,14 @@ button:focus {
   padding: .3rem .5rem;
   letter-spacing: 4.2px;
   margin-left: 1rem;
+  transition: .5s;
+}
+
+.main-alliance .main-alliance__item .main-alliance__button:hover {
+  border: solid 2px #056cb6;
+  text-transform: uppercase;
+  color: #056cb6;
+  transition: .5s;
 }
 
 .main-alliance .main-alliance__item:nth-child(1) .main-alliance__img img {
@@ -1101,12 +1130,6 @@ button:focus {
   font-size: .8rem;
   padding: .6rem 1rem;
   letter-spacing: 4.2px;
-}
-
-.main-solutions .main-solutions__button a:hover {
-  border: solid 2px #056cb6;
-  text-transform: uppercase;
-  color: #056cb6;
 }
 
 .main-solutions .main-general__subtitle {
@@ -1160,6 +1183,12 @@ button:focus {
   width: 57%;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-solutions .main-solutions__width {
+    width: 100%;
+  }
+}
+
 .main-experience .main-experiencie__item {
   display: flex;
   justify-content: center;
@@ -1199,6 +1228,12 @@ button:focus {
   height: 27rem;
   margin-top: 2rem;
   transition: .4s;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-featured .main-featured__card {
+    margin-bottom: 2rem;
+  }
 }
 
 .main-featured .main-featured__card:hover {
@@ -1277,6 +1312,12 @@ button:focus {
   text-align: center;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-contact .main-contact__text p {
+    width: 100%;
+  }
+}
+
 .main-contact .main-general__button {
   margin-top: 1rem;
   display: flex;
@@ -1290,11 +1331,16 @@ button:focus {
   display: flex;
   justify-content: center;
   display: flex;
+  transition: .5s;
   justify-content: center;
 }
 
 .main-footer .main-footer__info {
   background: #343434;
+}
+
+.main-footer .main-footer__card {
+  transition: .5s;
 }
 
 .main-footer .main-footer__card:hover {
@@ -1307,6 +1353,12 @@ button:focus {
   height: 4.5rem;
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-footer .main-footer__logo {
+    justify-content: center;
+  }
 }
 
 .main-footer .main-footer__service img {
@@ -1340,6 +1392,12 @@ button:focus {
 .main-footer .main-footer__list li {
   margin-bottom: 1rem;
   color: #717171;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-footer .main-footer__list li {
+    margin: 1.5rem 0;
+  }
 }
 
 .main-footer .main-footer__list li p {
