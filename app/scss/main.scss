@@ -104,6 +104,10 @@ body {
     list-style: none;
     margin-bottom: 0;
 
+    @include respond-to(xs) {
+      padding-left: 0;
+    }
+
     & p {
       margin: 0 .5rem;
     }
@@ -503,6 +507,7 @@ button:focus {
   
     & .main-cal__title {
       font-size: 3rem;
+      font-weight: 300;
     }
 
     & .main-cal__subtitle {

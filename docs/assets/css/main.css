@@ -607,6 +607,12 @@ body :focus {
   margin-bottom: 0;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-prenavbar .main-prenavbar__rrss {
+    padding-left: 0;
+  }
+}
+
 .main-prenavbar .main-prenavbar__rrss p {
   margin: 0 .5rem;
 }
@@ -1027,6 +1033,7 @@ button:focus {
 
 .main-cal .main-cal__item .main-cal__title {
   font-size: 3rem;
+  font-weight: 300;
 }
 
 .main-cal .main-cal__item .main-cal__subtitle {
