@@ -128,7 +128,7 @@ body {
   .main-prenavbar__rrss {  
     list-style: none;
     margin-bottom: 0;
-    
+    justify-content: flex-end;
 
     @include respond-to(xs) {
       padding-left: 0;

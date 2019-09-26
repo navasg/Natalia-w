@@ -637,6 +637,7 @@ body :focus {
 .main-prenavbar .main-prenavbar__rrss {
   list-style: none;
   margin-bottom: 0;
+  justify-content: flex-end;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
