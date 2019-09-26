@@ -76,12 +76,18 @@ body {
   background: $blue;
   padding: .8rem;
   font-size: .9rem;
+
   
   & .main-prenavbar__rrss {
+    &:nth-child(7) {
+      margin-right: 0px;
+    }
     @include respond-to(sm) {
       justify-content: center;
       width: 100%;
       margin: .5rem;
+
+    
     } 
   }
 
@@ -136,12 +142,15 @@ body {
 
     & li {
       margin: 0 1rem;
+      &:nth-child(7){
+        margin-right: 0px;
+      }
     }
 
     & .dropdown  {
       & a {
         margin: 0;
-        padding: 0;
+        padding: 10px;
         border: none;
         display: flex;
         outline: none!important;
@@ -359,6 +368,7 @@ button:focus {
 
   @include respond-to(xs) {
     width: initial;
+    margin-left: 10px;
   }
 
   @include respond-to(sm) {
@@ -1031,6 +1041,10 @@ button:focus {
     & li {
       margin-bottom: 1rem;
       color: #717171;
+      @include respond-to(xs) {
+        display: flex;
+        justify-content: center;
+      }
 
       @include respond-to(xs) {
         margin: 1.5rem 0;
@@ -1062,6 +1076,10 @@ button:focus {
   & .main-footer__link {
     list-style: none;
     padding-left: 0;
+
+    @include respond-to(xs) {
+      text-align: center;
+    }
 
     & li {
       margin-bottom: 1rem;

@@ -588,6 +588,10 @@ body :focus {
   font-size: .9rem;
 }
 
+.main-prenavbar .main-prenavbar__rrss:nth-child(7) {
+  margin-right: 0px;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .main-prenavbar .main-prenavbar__rrss {
     justify-content: center;
@@ -650,9 +654,13 @@ body :focus {
   margin: 0 1rem;
 }
 
+.main-prenavbar .main-prenavbar__rrss li:nth-child(7) {
+  margin-right: 0px;
+}
+
 .main-prenavbar .main-prenavbar__rrss .dropdown a {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   border: none;
   display: flex;
   outline: none !important;
@@ -872,6 +880,7 @@ button:focus {
 @media (min-width: 0px) and (max-width: 767px) {
   .navbar-brand {
     width: initial;
+    margin-left: 10px;
   }
 }
 
@@ -1571,6 +1580,13 @@ button:focus {
 
 @media (min-width: 0px) and (max-width: 767px) {
   .main-footer .main-footer__list li {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-footer .main-footer__list li {
     margin: 1.5rem 0;
   }
 }
@@ -1597,6 +1613,12 @@ button:focus {
 .main-footer .main-footer__link {
   list-style: none;
   padding-left: 0;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-footer .main-footer__link {
+    text-align: center;
+  }
 }
 
 .main-footer .main-footer__link li {
