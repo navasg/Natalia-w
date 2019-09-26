@@ -76,6 +76,15 @@ body {
   background: $blue;
   padding: .8rem;
   font-size: .9rem;
+  
+  & .main-prenavbar__rrss {
+    @include respond-to(sm) {
+      justify-content: center;
+      width: 100%;
+      margin: .5rem;
+    } 
+  }
+
   .main-rrss_phone {
     @include respond-to(xs) {
       display: none!important;
@@ -117,6 +126,7 @@ body {
 
     @include respond-to(xs) {
       padding-left: 0;
+
       justify-content: space-between
     }
 
@@ -251,6 +261,7 @@ button:focus {
     @include respond-to(xs) {
       display: flex;
       list-style: none;
+      margin-top: 1rem;
       padding-left: 0;
       justify-content: space-around;
       flex-wrap: wrap;
@@ -265,6 +276,8 @@ button:focus {
     } 
   }
 }
+
+
 
 .contact {
   background: #174183;
@@ -312,14 +325,19 @@ button:focus {
     color: $white;
   }
 
+
   @include respond-to(sm) {
-    color: $lightBlack;
+    color: $white;
   }
 
 
   &.fixed-color {
     color: $black;
     transition: .3s ease-in-out;
+
+    @include respond-to(sm) {
+      color: $white;
+    }
   }
 
   &:hover {
@@ -433,6 +451,16 @@ button:focus {
      
       @include respond-to(xs) {
         width: 100%;
+        padding: 0;
+        background: #dcdcdcd9;
+        align-items: center;
+      }
+
+      @include respond-to(sm) {
+        width: 100%;
+        padding: 0;
+        background: #dcdcdcd9;
+        align-items: center;
       }
 
       .main-banner__logo {
@@ -443,6 +471,12 @@ button:focus {
 
       .main-banner__title {
         width: 30%;
+        @include respond-to(xs) {
+          width: 100%;
+        }
+        @include respond-to(sm) {
+          width: 100%;
+        }
         p {
           padding: 0 25px;
           text-align: center;
@@ -465,6 +499,12 @@ button:focus {
 
       .main-banner__subtitle  {
         width: 30%;
+        @include respond-to(xs) {
+          width: 100%;
+        }
+        @include respond-to(sm) {
+          width: 100%;
+        }
 
         p {
           font-size: 1.3rem;
@@ -473,6 +513,10 @@ button:focus {
           font-family: $roboto;
           text-transform: uppercase;
           color: $gray2;
+
+          @include respond-to(xs) {
+            color: #3e3e3e;
+          }
         }
       }
 
@@ -716,6 +760,13 @@ button:focus {
 }
 
 .main-experience {
+  
+  main-experience__carousel {
+    @include respond-to(xs) {
+      margin-top: 2rem;
+    }
+  }
+  
   .main-experiencie__item {
     display: flex;
     justify-content: center;
@@ -759,6 +810,11 @@ button:focus {
 
     @include respond-to(xs) {
       margin-bottom: 2rem;
+      height: 32rem;
+    }
+
+    @include respond-to(sm) {
+      margin-top: 4rem
     }
 
     &:hover {
@@ -873,6 +929,21 @@ button:focus {
 }
 
 .main-footer {
+  & .main-footer__responsive {
+    display: none;
+
+    @include respond-to(xs) {
+      display: flex;
+      padding: 2rem 0;
+      justify-content: space-around;
+    }
+    @include respond-to(sm) {
+      display: flex;
+      padding: 2rem 0;
+      justify-content: space-around;
+    }
+  }
+
   & .main-footer__info {
     background: #343434;
   }
@@ -896,6 +967,10 @@ button:focus {
     @include respond-to(xs) {
       justify-content: center;
     }
+
+    @include respond-to(sm) {
+      justify-content: center;
+    }
   }
 
   & .main-footer__service {
@@ -914,7 +989,12 @@ button:focus {
     padding: 4rem;
     justify-content: center;
     transition: .5s;
-
+    @include respond-to(sm) {
+      display: none;
+    }
+    @include respond-to(xs) {
+      display: none;
+    }
    
 
     & a {

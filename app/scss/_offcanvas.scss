@@ -23,6 +23,10 @@ body {
     transition-duration: .3s;
     transition-property: left, visibility;
     padding-top: 25px;
+
+    @include respond-to(sm) {
+      top: 10.4rem;
+    }
   }
 
   .offcanvas-collapse.open {
@@ -130,7 +134,7 @@ body {
 }
 
 .hamburger--elastic .hamburger-inner {
-  top: 6px;
+  top: 1.7rem;
   transition-duration: 0.275s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }

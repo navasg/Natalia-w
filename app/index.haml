@@ -121,22 +121,22 @@
     %section.main-cal
       .container
         .row
-          .col-lg-3
+          .col-lg-3.col-md-6
             .main-cal__item
               %p.main-cal__title
                 +40.000
               %p.main-cal__subtitle
                 Personas impactadas en los últimos años con nuestros programas de atracción
-          .col-lg-3
+          .col-lg-3.col-md-6
             .main-cal__item
               %img.main-cal__img{ :src => 'assets/img/user.png' }/
-          .col-lg-3
+          .col-lg-3.col-md-6
             .main-cal__item
               %p.main-cal__title
                 +800
               %p.main-cal__subtitle
                 Personas han sido vinculadas con las mejores empresas. 
-          .col-lg-3
+          .col-lg-3.col-md-6
             .main-cal__item
               %img.main-cal__img{ :src => 'assets/img/identification.png' }/
     %section.main-alliance
@@ -262,7 +262,7 @@
         %p.main-general__subtitle 
           LOREM IPSUM
         .row
-          .col-lg-4
+          .col-lg-4.col-md-6
             .main-featured__card
               .main-featured__bg
                 %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
@@ -276,7 +276,7 @@
                   Lorem Ipsum
                 %p.main-featured__description
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          .col-lg-4
+          .col-lg-4.col-md-6
             .main-featured__card
               .main-featured__bg
                 %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
@@ -290,7 +290,7 @@
                   Lorem Ipsum
                 %p.main-featured__description
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          .col-lg-4
+          .col-lg-4.col-md-6
             .main-featured__card
               .main-featured__bg
                 %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
@@ -320,6 +320,13 @@
         .container
           .row  
             .col-lg-3.main-footer__card
+              .main-footer__responsive
+                %a{:href=>""}
+                  %img{:src=> "assets/img/social-linkedin-circular-button_3@2x.png"}
+                %a{:href=>""}
+                  %img.facebook-logo-in-circular-button-outlined-social-symbol{:src => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol@2x.png"}
+                %a{:href=>""}
+                  %img{:src=> "assets/img/social-linkedin-circular-button@2x.png"}
               .main-footer__content
                 %a{:href=>""}
                   %img{:src=> "assets/img/social-linkedin-circular-button_3.png"}
@@ -327,7 +334,7 @@
             .col-lg-3.main-footer__card
               .main-footer__content
                 %a{:href=>""}
-                  %img{:src=> "assets/img/facebook-logo-in-circular-button-outlined-social-symbol.png"}
+                  %img.facebook-logo-in-circular-button-outlined-social-symbol{:src => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol.png", :srcset => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol@2x.png 2x,\n             assets/img/facebook-logo-in-circular-button-outlined-social-symbol@3x.png 3x"}/
                   Facebook 
             .col-lg-3.main-footer__card
               .main-footer__content
