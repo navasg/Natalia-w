@@ -13,7 +13,7 @@
     %link{ rel: 'stylesheet', href:'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css' }/
     %link{:href => "assets/img/favicon.png", :rel => "shortcut icon"}/
 
-    %link{ href:'https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Open+Sans:300,400,600,700,800|Roboto:400,500,700,900&display=swap',  rel:'stylesheet' }/
+    %link{ href:'https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Open+Sans:300,400,600,700,800|Roboto:300,400,500,700,900&display=swap',  rel:'stylesheet' }/
   %body
     %header.fixed-top.navbar-fixed-js
       .main-prenavbar
@@ -92,6 +92,42 @@
               %li
                 %a{:href=>""}
                   %img{:src=> 'assets/img/social-linkedin-circular-button_6@3x.png'}
+    %section.main-banner2
+      .container.padding-top-bottom
+        .main-banner2__text
+          %h2.main-general__title
+            programas para jóvenes
+          %p.main-general__subtitle
+            Lorem ipsum
+    %section.main-program
+      .container.padding-top-bottom
+        .row
+          .col-lg-6.d-flex.flex-column.justify-content-center.col-md-6
+            %h2.main-program__title
+              lorem ipsum 
+            %p.main-program__description
+              Aliados en Colombia desde hace 4 años con Cia de Talentos, consultora de origen brasileño, especializada en la atracción, selección y desarrollo de personas, desde el inicio de sus carreras (practicantes, trainees, jóvenes profesionales, MBAs) hasta las posiciones de más alto nivel.
+          .col-lg-6.col-md-6
+            %img.main-program__img{:src=> 'assets/img/img_2.png'} 
+    %section.main-form
+      .container.padding-top-bottom
+        %form 
+          %h2.main-general__title--small
+            Envíanos un mensaje
+          %label.d-flex.flex-column 
+            Nombre
+            %input{:type=>'text'}
+          %label.d-flex.flex-column 
+            Email
+            %input{:type=>'email'}
+          %label.d-flex.flex-column 
+            Asunto
+            %input{:type=>'text'}
+          %label.d-flex.flex-column 
+            Mensaje
+            %textarea{:type=>'text'}
+          .main-form__container-button
+            %button.main-form__button{:type=> 'submit'} Enviar
     %section.main-contact
       .container.padding-top-bottom
         %h2.main-general__title.fadeInUp.animated

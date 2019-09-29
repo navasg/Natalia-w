@@ -40,8 +40,21 @@ body {
 }
 
 .padding-top-bottom {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.main-general__title--small {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.main-general__description {
+  line-height: 22px;
+  color: $gray2;
+  font-size: 1rem;
 }
 
 
@@ -53,7 +66,7 @@ body {
   & a {
     border-radius: 20px;
     border: solid 2px #d8d8d8;
-  transition: .5s;
+    transition: .5s;
 
     text-transform: uppercase;
     color: #888888;
@@ -226,6 +239,7 @@ button:focus {
   margin-bottom: 3rem;
   font-weight: bold;
   letter-spacing: 7px;
+  font-family: $roboto;
   color: $gray2;
   text-transform: uppercase;
 
@@ -771,7 +785,7 @@ button:focus {
 
 .main-experience {
   
-  main-experience__carousel {
+  .main-experience__carousel {
     @include respond-to(xs) {
       margin-top: 2rem;
     }
@@ -797,9 +811,7 @@ button:focus {
     }
   } 
 
-  & .main-experience__description {
-    line-height: 22px;
-    color: $gray2;
+  & .main-general__description {
     padding-right: 1rem;
   }
 
@@ -1090,6 +1102,169 @@ button:focus {
       }
     }
   }
+}
 
+.main-banner2 {
+  margin-top: 9rem;
+  background-image: url('../img/img.png');
+  position: relative;
+  height: 55vh;
+  .main-banner2__text {
+    background-color: rgba(0, 0, 0, 0.08);
+    top: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .main-general__title {
+      color: $white;
+    }
 
+    .main-general__subtitle {
+      margin-bottom: 0;
+      &::before {
+        content: none;
+      }
+    }
+  }
+}
+
+.main-program {
+  .padding-top-bottom {
+    padding-bottom: 0;
+  }
+  .main-program__title {
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    
+  }
+
+  .main-program__description {
+    line-height: 1.88;
+    padding-right: 6rem;
+    color: $gray2;
+    font-size: 1rem;
+    @include respond-to(xs) {
+      padding-right: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    @include respond-to(sm) {
+      padding-right: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .main-program__img {
+    width: 460px;
+    height: 400px;
+    object-fit: contain;
+
+    @include respond-to(xs)  {
+      width: 100%;
+      height: auto;
+    }
+
+    @include respond-to(sm)  {
+      width: 100%;
+      height: auto;
+    }
+
+    // box-shadow: 0 2px 4px 0 rgba(134, 129, 129, 0.5);
+  }
+}
+
+.main-form {
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
+    .main-general__title--small {
+  
+      width: 60%;
+      @include respond-to(xs) {
+        width: 100%;
+      }
+    }
+
+    & label {
+      width: 60%;
+      font-size: .9rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: $gray2;
+
+      @include respond-to(xs) {
+        width: 100%;
+      }
+    }
+
+    & input, & textarea {
+      background: #f9f9f9;
+      padding: .8rem;
+      border: none;
+    }
+
+    & textarea {
+      height: 8.5rem;      
+      resize: none;
+    }
+
+    .main-form__container-button {
+      width: 60%;
+      margin-top: 2rem;
+      
+      @include respond-to(xs) {
+        width: 100%;
+      }
+      
+      .main-form__button {
+        border-radius: 20px; 
+        text-transform: uppercase;
+        color: $white;
+        background: #26998a;
+        font-size: .8rem;
+        padding: .8rem 1.5rem;
+        border: none;
+        letter-spacing: 4.2px;
+      }
+
+    }
+   
+  }
+}
+
+.main-professionals {
+  .main-professionals__img {
+    width: 100%;
+
+    @include respond-to(xs) {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.main-executives {
+  background: #f9f9f9;
+  
+  .main-order  {
+    @include respond-to(xs) {
+      order: -1;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .main-executives__img {
+    width: 328px;
+    height: 491px;
+    object-fit: contain;
+  }
 }
