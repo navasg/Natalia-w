@@ -46,13 +46,13 @@ body {
 
 .main-general__title--small {
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
 
 .main-general__description {
-  line-height: 22px;
+  line-height: 1.88;
   color: $gray2;
   font-size: 1rem;
 }
@@ -824,79 +824,85 @@ button:focus {
   & .main-general__button {
     margin-top: 5rem;
   }
+}
 
-  & .main-featured__card {
-    height: 27rem;
-    margin-top: 2rem;
-    transition: .4s;
+.main-featured__card {
+  height: 27rem;
+  margin-top: 2rem;
+  transition: .4s;
 
-    @include respond-to(xs) {
-      margin-bottom: 2rem;
-      height: 32rem;
+  @include respond-to(xs) {
+    margin-bottom: 2rem;
+    height: 32rem;
+  }
+
+  @include respond-to(sm) {
+    margin-top: 4rem
+  }
+
+  &:hover {
+    box-shadow: 0px 20px 14px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+    transform: translateY(-5px);
+  }
+
+  & .main-featured__title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  & .main-featured__description {
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    color: $gray2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    overflow: hidden;
+  }
+
+
+
+  & .main-featured__bg {
+    height: 60%;
+    position: relative;
+    & img {
+      width: 100%;
+      height: 100%;
+      // object-fit: contain;
     }
 
-    @include respond-to(sm) {
-      margin-top: 4rem
-    }
+    & .main-featured__date {
+      position: absolute;
+      width: 3rem;
+      height: 3rem;
+      top: 2rem;
+      left: 2rem;
+      justify-content: center;
+      border: 1px solid #fff;
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    &:hover {
-      box-shadow: 0px 20px 14px rgba(0, 0, 0, 0.1);
-      transition: .5s;
-      transform: translateY(-5px);
-    }
-  
-    & .main-featured__title {
-      font-size: 1.1rem;
-      font-weight: bold;
-    }
-
-    & .main-featured__description {
-      text-align: center;
-      display: -webkit-box;
-      display: -moz-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      -moz-box-orient: vertical;
-      overflow: hidden;
-    }
-
- 
-
-    & .main-featured__bg {
-      height: 60%;
-      position: relative;
-      & img {
-        width: 100%;
-        height: 100%;
-        // object-fit: contain;
-      }
-
-      & .main-featured__date {
-        position: absolute;
-        width: 3rem;
-        height: 3rem;
-        top: 2rem;
-        left: 2rem;
-        justify-content: center;
-        border: 1px solid #fff;
-        color: $white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        & p {
-          margin-bottom: 0;
-          font-size: .8rem;
-          font-weight: bold;
-        }
+      & p {
+        margin-bottom: 0;
+        font-size: .8rem;
+        font-weight: bold;
       }
     }
   }
+
   & .main-featured__body {
     padding: 3rem 2rem;
     background: $white;
   }
 }
+
+
+
+
 
 .main-contact {
   background-image: url('../img/bg.png');
@@ -1108,7 +1114,14 @@ button:focus {
   margin-top: 9rem;
   background-image: url('../img/img.png');
   position: relative;
+  background-size: cover;
   height: 55vh;
+  @include respond-to(xs) {
+    margin-top: 10rem;
+  }
+  @include respond-to(sm) {
+    margin-top: 12rem;
+  }
   .main-banner2__text {
     background-color: rgba(0, 0, 0, 0.08);
     top: 0;
@@ -1188,7 +1201,7 @@ button:focus {
     align-items: center;
 
     .main-general__title--small {
-  
+      font-size: 1.3rem;
       width: 60%;
       @include respond-to(xs) {
         width: 100%;
@@ -1266,5 +1279,332 @@ button:focus {
     width: 328px;
     height: 491px;
     object-fit: contain;
+  }
+}
+
+.main-development {
+
+  .main-order {
+    @include respond-to(xs) {
+      order: -1;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .d-flex {
+    @include respond-to(xs) {
+      display: block!important;
+    }
+  }
+  .main-general__description {
+    padding-right: 6rem;
+    
+    @include respond-to(xs) {
+      padding-right: 0;
+    }
+  }
+
+  .main-development__img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.main-workshops {
+  background-color: #f9f9f9;
+
+  .main-general__title {
+    margin: 2rem 0;
+  }
+
+  .main-general__description {
+    text-align: center;
+    width: 70%;
+
+    @include respond-to(xs) {
+      width: 100%;
+    }
+  }
+}
+
+.main-orientation {
+
+  .main-general__title--small {
+    & br {
+      @include respond-to(xs) {
+        display: none;
+      }
+    }
+  }
+  .main-orientation__img {
+    width: 100%;
+    object-fit: contain;
+
+    @include respond-to(xs) {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.main-mentoring {
+  .padding-top-bottom {
+    @include respond-to(xs) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    @include respond-to(sm) {
+      padding-top: 0;
+      padding-bottom: 0;
+
+    }
+  }
+  .d-flex {
+    @include respond-to(xs) {
+      display: block!important;
+    }
+  }
+
+  .main-order {
+    @include respond-to(xs) {
+      order: -1;
+      margin-bottom: 1.5rem;
+
+    }
+  }
+  .main-general__description {
+    padding-right: 6rem;
+
+    @include respond-to(xs) {
+      padding-right: 0;
+    }
+  }
+
+  .main-mentoring__img {
+    width: 460px;
+    height: 400px;
+    object-fit: contain;
+
+    @include respond-to(xs) {
+      width: 100%;
+      height: auto;
+    }
+
+    @include respond-to (sm) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.main-identification {
+  .padding-top-bottom {
+    @include respond-to(xs) {
+      padding-bottom: 0;
+    }
+  }
+
+  .main-general__title--small {
+    @include respond-to(xs) {
+      margin-bottom: 2rem;
+
+    }
+  }
+  .main-general__description, .main-general__title--small {
+    padding-right: 6rem;
+    
+    @include respond-to(xs) {
+      padding-right: 0;
+    }
+  }
+
+  .main-identification__img {
+    width: 100%;
+    object-fit: contain;
+    @include respond-to(xs) {
+      height: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.main-plans {
+  background: #f9f9f9;
+  .padding-top-bottom {
+    @include respond-to(xs) {
+      padding-bottom: 0;
+    }
+  }
+  .main-general__description, .main-general__title--small {
+    padding-right: 6rem;
+    
+    @include respond-to(xs) {
+      padding-right: 0;
+      margin-bottom: 2rem
+    }
+  }
+
+  .main-plans__img {
+    width: 100%;
+    object-fit: contain;
+
+    @include respond-to(xs) {
+      height: 100%;
+    }
+  }
+}
+
+.main-mark {
+  .padding-top-bottom {
+    @include respond-to(xs) {
+      padding-bottom: 0;
+    }
+  }
+  .main-general__description, .main-general__title--small {
+    padding-right: 6rem;
+    
+    @include respond-to(xs) {
+      padding-right: 0;
+    }
+  }
+
+  .main-mark__img {
+
+    @include respond-to (xs) {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.main-challenge {
+  .main-general__description {
+    padding-right: 6rem;
+    @include respond-to(xs) {
+      padding-right: 0;
+    }
+  }
+
+  .main-challenge__img {
+    @include respond-to (xs) {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .main-order {
+    @include respond-to(xs) {
+      order: -1;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.main-challenge-about {
+  background-color: #f9f9f9;
+
+  .main-general__title {
+    margin: 2rem 0;
+  }
+
+  .main-general__description {
+    text-align: center;
+    width: 70%;
+
+    @include respond-to(xs) {
+      width: 100%;
+    }
+
+    @include respond-to(sm) {
+      width: 100%;
+    }
+  }
+}
+
+.main-banner__blog {
+  background: #f9f9f9;
+  margin-top: 9rem;
+  border-bottom: 1px solid #d4d4d4;
+  .main-general__title {
+    margin-left: -2px;
+
+  }
+  .main-general__title, .main-general__subtitle {
+    text-align: start;
+  }
+
+  .main-general__subtitle {
+    &:before {
+      left: 0;
+      transform: initial;
+    }
+  }
+
+}
+
+.main-blog__all  {
+  background: #f9f9f9;
+
+  & .main-featured__card {
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+
+  .main-sidebar {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    // height: 100%;
+    .padding-top-bottom {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    .main-search {
+      background: #f9f9f9;
+      input {
+        border: none;
+        background: transparent;
+        width: 85%;
+      }
+
+      label {
+        display: flex;
+        padding: .5rem 1rem;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .main-featured__title {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    .main-recent-post {
+      padding:  3rem;
+      border-bottom: 1px solid #d4d4d4;
+
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+    
+
+    .list-sidebar {
+      list-style: none;
+
+      padding-left: 0;
+      color: $gray2;
+
+      li {
+        margin: 1rem 0;
+
+        i {
+          margin-right: .5rem;
+        }
+      }
+    }
   }
 }
