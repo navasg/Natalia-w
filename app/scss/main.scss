@@ -3,6 +3,9 @@
 @import "body";
 @import "buttons";
 @import "offcanvas";
+@import "blog";
+@import "contact";
+@import "about";
 @import "setting-slick";
 
 html {
@@ -834,6 +837,7 @@ button:focus {
   @include respond-to(xs) {
     margin-bottom: 2rem;
     height: 32rem;
+    box-shadow: 1px 2px 14px rgba(0, 0, 0, 0.1);
   }
 
   @include respond-to(sm) {
@@ -849,6 +853,7 @@ button:focus {
   & .main-featured__title {
     font-size: 1.1rem;
     font-weight: bold;
+    text-transform: uppercase;
   }
 
   & .main-featured__description {
@@ -997,6 +1002,8 @@ button:focus {
 
   .main-footer__card {
     transition: .5s;
+    border-right: 1px solid #343434;
+    border-left: 1px solid #343434;
 
     &:hover {
       transition: .5s;
@@ -1105,6 +1112,12 @@ button:focus {
 
       & a {
         color: #717171;
+        transition: .5s;
+
+        &:hover {
+          color: $white;
+          transition: .5s;
+        }
       }
     }
   }
@@ -1524,87 +1537,3 @@ button:focus {
   }
 }
 
-.main-banner__blog {
-  background: #f9f9f9;
-  margin-top: 9rem;
-  border-bottom: 1px solid #d4d4d4;
-  .main-general__title {
-    margin-left: -2px;
-
-  }
-  .main-general__title, .main-general__subtitle {
-    text-align: start;
-  }
-
-  .main-general__subtitle {
-    &:before {
-      left: 0;
-      transform: initial;
-    }
-  }
-
-}
-
-.main-blog__all  {
-  background: #f9f9f9;
-
-  & .main-featured__card {
-    margin-top: 0;
-    margin-bottom: 4rem;
-  }
-
-  .main-sidebar {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    background-color: #ffffff;
-    // height: 100%;
-    .padding-top-bottom {
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-    }
-    .main-search {
-      background: #f9f9f9;
-      input {
-        border: none;
-        background: transparent;
-        width: 85%;
-      }
-
-      label {
-        display: flex;
-        padding: .5rem 1rem;
-        justify-content: space-between;
-        align-items: center;
-      }
-    }
-
-    .main-featured__title {
-      font-size: 1.1rem;
-      font-weight: bold;
-    }
-
-    .main-recent-post {
-      padding:  3rem;
-      border-bottom: 1px solid #d4d4d4;
-
-      &:last-child{
-        border-bottom: none;
-      }
-    }
-    
-
-    .list-sidebar {
-      list-style: none;
-
-      padding-left: 0;
-      color: $gray2;
-
-      li {
-        margin: 1rem 0;
-
-        i {
-          margin-right: .5rem;
-        }
-      }
-    }
-  }
-}

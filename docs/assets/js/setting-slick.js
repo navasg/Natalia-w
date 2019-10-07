@@ -1,3 +1,4 @@
+
 $('.main-banner__content').slick({
   infinite: true,
   // autoplay: true,
@@ -46,14 +47,14 @@ $('.main-experience__carousel').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       infinite: true,
-      dots: true
+      dots: true,
     }
   },
   {
     breakpoint: 900,
     settings: {
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
     }
   },
   {
@@ -63,7 +64,7 @@ $('.main-experience__carousel').slick({
       slidesToScroll: 1,
       dots: false,
       autoplay: true,
-      autoplaySpeed: 1000
+      autoplaySpeed: 1000,
     }
   }
   ]
@@ -81,14 +82,14 @@ $('.main-clients__carousel').slick({
       slidesToShow: 3,
       slidesToScroll: 3,
       infinite: true,
-      dots: true
+      dots: true,
     }
   },
   {
     breakpoint: 900,
     settings: {
       slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToScroll: 2,
     }
   },
   {
@@ -98,7 +99,7 @@ $('.main-clients__carousel').slick({
       slidesToScroll: 1,
       dots: false,
       // autoplay: true,
-      autoplaySpeed: 1000
+      autoplaySpeed: 1000,
     }
   }
   ]
@@ -117,14 +118,14 @@ $('.main-models__carousel').slick({
       slidesToShow: 2,
       slidesToScroll: 1,
       infinite: true,
-      dots: true
+      dots: true,
     }
   },
   {
     breakpoint: 900,
     settings: {
       slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToScroll: 2,
     }
   },
   {
@@ -134,7 +135,7 @@ $('.main-models__carousel').slick({
       slidesToScroll: 1,
       dots: false,
       autoplay: true,
-      autoplaySpeed: 1000
+      autoplaySpeed: 1000,
     }
   }
   ]
@@ -175,3 +176,4 @@ $('.main-benefits__carousel').slick({
 //     }
 //   ]
 // })
+

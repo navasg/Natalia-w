@@ -92,12 +92,21 @@
               %li
                 %a{:href=>""}
                   %img{:src=> 'assets/img/social-linkedin-circular-button_6@3x.png'}
-    %section.main-banner__blog
+    %section.banner-small
       .container.padding-top-bottom
-        %h2.main-general__title
-          consejo de carrera
-        %p.main-general__subtitle
-          Lorem ipsum
+        .row
+          .col-lg-7
+            %h2.main-general__title
+              consejo de carrera
+            %p.main-general__subtitle
+              Lorem ipsum
+          .col-lg-5
+            %nav{"aria-label" => "breadcrumb"}
+              .breadcrumb
+                .breadcrumb-item
+                  %a{:href => "#"} Home
+                .breadcrumb-item.active{"aria-current" => "page"} Library
+
     %section.main-blog__all 
       .container
         .row.padding-top-bottom
@@ -144,7 +153,7 @@
                     %p.main-featured__title 
                       Lorem Ipsum
                     %p.main-featured__description
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.      
           .col-lg-4
             .main-sidebar
               .container.padding-top-bottom
@@ -157,27 +166,43 @@
                     Publicaciones Recientes
                   %ul.list-sidebar
                     %li
-                      %i.fa.fa-caret-right
-                      Lorem Ipsum
+                      %a{:href=>""}
+                        %i.fa.fa-caret-right
+                        Lorem Ipsum
                     %li
-                      %i.fa.fa-caret-right
-                      Lorem Ipsum
+                      %a{:href=>""}
+                        %i.fa.fa-caret-right
+                        Lorem Ipsum
                     %li
-                      %i.fa.fa-caret-right
-                      Lorem Ipsum
+                      %a{:href=>""}
+                        %i.fa.fa-caret-right
+                        Lorem Ipsum
                 .main-recent-post
                   %p.main-featured__title 
                     Comentarios Recientes
                   %ul.list-sidebar
                     %li
-                      %i.fa.fa-caret-right
-                      Lorem Ipsum
+                      %a{:href=>""}
+                        %i.fa.fa-caret-right
+                        Lorem Ipsum
                     %li
-                      %i.fa.fa-caret-right
-                      Lorem Ipsum
+                      %a{:href=>""}
+                        %i.fa.fa-caret-right
+                        Lorem Ipsum
                     %li
-                      %i.fa.fa-caret-right
-                      Lorem Ipsum
+                      %a{:href=>""}
+                        %i.fa.fa-caret-right
+                        Lorem Ipsum
+          %nav.nav-paginator{"aria-label" => "..."}
+            %ul.pagination.pagination-sm
+              %li.page-item.active{"aria-current" => "page"}
+                %span.page-link
+                  1
+                  %span.sr-only (current)
+              %li.page-item
+                %a.page-link{:href => "#"} 2
+              %li.page-item
+                %a.page-link{:href => "#"} 3
                       
 
 
