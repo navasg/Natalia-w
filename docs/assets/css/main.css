@@ -266,14 +266,6 @@ body {
   transform: initial;
 }
 
-* {
-  transition: .3s;
-}
-
-*:hover {
-  transition: 1s;
-}
-
 .main-blog__all {
   background: #f9f9f9;
 }
@@ -630,15 +622,6 @@ body {
   text-align: initial;
   margin-top: -1rem;
   color: #000;
-}
-
-.navbar-nav li:hover .dropdown-menu {
-  display: block;
-  transition: .5s;
-}
-
-.navbar-nav li:hover {
-  transition: .5s;
 }
 
 .contact-form label, .contact-form .main-general__title--small, .contact-form .main-form__container-button {
@@ -1360,8 +1343,50 @@ button:focus {
 
 .nav-item a {
   height: 100%;
+  justify-content: center;
   display: flex;
+  text-transform: uppercase;
   align-items: center;
+}
+
+.navbar .navbar-nav {
+  min-height: 5rem;
+}
+
+.navbar .dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .dropdown-menu {
+  border: none !important;
+  background-color: #26998a;
+  margin: 0;
+  width: 21rem;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  padding: 0;
+  min-width: auto;
+  border-radius: 0 !important;
+}
+
+.navbar .dropdown-menu a {
+  color: #fff;
+  text-align: center;
+}
+
+.navbar .dropdown-menu li {
+  color: #fff;
+  padding: 1rem;
+  transition: .3s;
+  font-weight: 600;
+}
+
+.navbar .dropdown-menu li:hover {
+  background: #056cb6;
+  transition: .3s;
+  color: #fff;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

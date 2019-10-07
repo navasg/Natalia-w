@@ -50,48 +50,73 @@
                   %a{:href=>""}
                     %img{:src=> 'assets/img/shape.png'}                  
                 %li
-                  %a.main-prenavbar__button{:href=>""} CONTÁCTANOS
+                  %a.main-prenavbar__button{:href=>"contact.html"} CONTÁCTANOS
       %nav.navbar.navbar-expand-lg
         .container
           .main-brand__top
             .main-brand
-              %a.navbar-brand{ :href => '#' }
+              %a.navbar-brand{ :href => 'index.html' }
                 %img#iso{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/ 
           .main-brand__fixed
             .main-brand
-              %a.navbar-brand{ :href => '#' }
+              %a.navbar-brand{ :href => 'index.html' }
                 %img#iso{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/ 
           .main-brand.brand-responsive
-            %a.navbar-brand{ :href => '#' }
+            %a.navbar-brand{ :href => 'index.html' }
               %img#iso{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/ 
             %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{ 'data-toggle' => 'offcanvas', :type => 'button' }
               %span.hamburger-box
               %span.hamburger-inner
           .navbar-collapse.offcanvas-collapse
             %ul.navbar-nav.mr-autos
+              %li.dropdown.nav-item
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Soluciones
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "attraction-and-talent-selection.html"} Atracción y selección de talento
+                  %li
+                    %a{:href => "youth-program.html"} Programa para jóvenes
+                  %li
+                    %a{:href => "career-development.html"} Desarrollo de carrera
+                  %li
+                    %a{:href => "evaluation-and-career.html"} Evaluación y carrera
+                  %li
+                    %a{:href => ""} Consultoria inhouse
+                  %li
+                    %a{:href => ""} Marca empleadora
+              %li.dropdown.nav-item
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Desafíos
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "challenge.html"} Diversidad e inclusión
+                  %li
+                    %a{:href => "challenge.html"} Futuro del trabajo
+                  %li
+                    %a{:href => "challenge.html"} Futuro de la educación
+                  %li
+                    %a{:href => "challenge.html"} Construcción de marca empleadora
+                  %li
+                    %a{:href => "challenge.html"} Carrera de los sueños de los jovenes
+              %li.dropdown.nav-item
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Oportunidades laborales
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "category.html"} Media y alta gerencia
+                  %li
+                    %a{:href => "#"} Profesionales
+              %li.dropdown.nav-item
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Tendencias
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "blog.html"} Consejos de carrera
+                  %li
+                    %a{:href => "blog-2.html"} gestión humana como aliado estratégico del negocio 
               %li.nav-item
-                %a.nav-link{ :href => '#solutions', :data-toggle => 'offcanvas' } Soluciones
-              %li.nav-item
-                %a.nav-link#clients{ :href => '#' } Desafíos
-              %li.nav-item
-                %a.nav-link{ :href => '#' } Oportunidades laborales
-              %li.nav-item
-                %a.nav-link{:href => '#',:data-toggle => 'offcanvas' } Tendencias
-              %li.nav-item
-                %a.nav-link{:href => '#contact',:data-toggle => 'offcanvas' } Conócenos
-            %ul.main-prenavbar__rrss.main-rrss__responsive
-              %li
-                %a{:href=>""}
-                  %img{:src=> 'assets/img/social-linkedin-circular-button_4@3x.png'}
-              %li
-                %a{:href=>""}
-                  %img{:src=> 'assets/img/facebook-logo-in-circular-button-outlined-social-symbol_2@3x.png'}
-              %li
-                %a{:href=>""}
-                  %img{:src=> 'assets/img/social-linkedin-circular-button_5@3x.png'}
-              %li
-                %a{:href=>""}
-                  %img{:src=> 'assets/img/social-linkedin-circular-button_6@3x.png'}
+                %a.nav-link{:href => 'about.html',:data-toggle => 'offcanvas' } Conócenos
     %section.banner-small
       .container.padding-top-bottom
         .row
@@ -322,7 +347,7 @@
           Copyright © 2019 
           %a{:href=>""}Sigma Studios 
 
-    %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
+    %script{src: 'assets/js/jquery.min.js' }
     %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"}
     %script{src: 'assets/js/slick.min.js' }

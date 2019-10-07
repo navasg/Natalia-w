@@ -6,8 +6,16 @@ $(function () {
   })
 })
 
-$('.dropdown-toggle').dropdown()
+// $('.dropdown-toggle').dropdown()
 
+//menu drop
+$(document).ready(function () {
+  $('.navbar .dropdown').hover(function () {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+  }, function () {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp(150)
+  });
+});
 
 
 // Menú fixed
@@ -32,6 +40,17 @@ $(window).scroll(function () {
 
   }
 });
+
+
+// $('ul.nav li.dropdown').hover(function () {
+//   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+// }, function () {
+//   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+// });
+
+$('.nav-link-p').click(function () {
+  $('.offcanvas-collapse').removeClass('open');
+})
 
 $(".hamburger").on("click", function () {
   $(this).toggleClass("is-active");
@@ -103,3 +122,15 @@ $(document).ready(function () {
 });
 
 
+// $(document).ready(function () {
+//   $(".dropdown").hover(
+//     function () {
+//       $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("8000");
+//       $(this).toggleClass('open');
+//     },
+//     function () {
+//       $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("8000");
+//       $(this).toggleClass('open');
+//     }
+//   );
+// });
