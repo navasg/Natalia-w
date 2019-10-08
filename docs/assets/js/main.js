@@ -1,3 +1,14 @@
+wow = new WOW(
+  {
+    animateClass: 'animated',
+    mobile: false,
+    offset: 100,
+  }
+);
+wow.init();
+
+
+
 $(function () {
   'use strict'
 

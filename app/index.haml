@@ -83,7 +83,7 @@
                   %li
                     %a{:href => ""} Consultoria inhouse
                   %li
-                    %a{:href => ""} Marca empleadora
+                    %a{:href => "employer-brand.html"} Marca empleadora
               %li.dropdown.nav-item
                 %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
                   Desafíos
@@ -120,7 +120,7 @@
     %section.main-banner
       .main-banner__content
         .main-banner__item
-          .main-banner__text
+          .main-banner__text.wow.animated.fadeInRight{:style=>"visibility: visible; animation-delay: .3s;"}
             .main-banner__logo
               %img{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
             .main-banner__title
@@ -178,7 +178,7 @@
               %img.main-cal__img{ :src => 'assets/img/identification.png' }/
     %section.main-alliance
       .container.padding-top-bottom
-        %h2.main-general__title.fadeInUp.animated.wow
+        %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
           Alianzas 
         %p.main-general__subtitle 
           LOREM IPSUM
@@ -203,7 +203,7 @@
     %section.main-solutions#solutions
       .main-solutions__width
         .container.padding-top-bottom
-          %h2.main-general__title.fadeInUp.animated.wow
+          %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
             Soluciones 
           %p.main-general__subtitle 
             LOREM IPSUM
@@ -280,7 +280,7 @@
       .container.padding-top-bottom
         .row
           .col-lg-6
-            %h2.main-general__title
+            %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
               Experiencias de éxito 
             %p.main-general__description 
               Aliados en Colombia desde hace 4 años con Cia de Talentos, consultora de origen brasileño, especializada en la atracción, selección y desarrollo de personas, desde el inicio de sus carreras (practicantes, trainees, jóvenes profesionales, MBAs) hasta las posiciones de más alto nivel.
@@ -294,64 +294,67 @@
                 %img{:src=>'assets/img/captura-6.png'}
     %section.main-featured
       .container.padding-top-bottom
-        %h2.main-general__title.fadeInUp.animated.wow
+        %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
           Tendencias 
         %p.main-general__subtitle 
           LOREM IPSUM
         .row
           .col-lg-4.col-md-6
-            .main-featured__card
-              .main-featured__bg
-                %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
-                .main-featured__date 
-                  %p 
-                    19
-                  %p 
-                    Jul
-              .main-featured__body
-                %p.main-featured__title 
-                  Lorem Ipsum
-                %p.main-featured__description
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            %a.main-featured__link{:href=>'single-post.html'}
+              .main-featured__card
+                .main-featured__bg
+                  %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
+                  .main-featured__date 
+                    %p 
+                      19
+                    %p 
+                      Jul
+                .main-featured__body
+                  %p.main-featured__title 
+                    Lorem Ipsum
+                  %p.main-featured__description
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           .col-lg-4.col-md-6
-            .main-featured__card
-              .main-featured__bg
-                %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
-                .main-featured__date 
-                  %p 
-                    19
-                  %p 
-                    Jul
-              .main-featured__body
-                %p.main-featured__title 
-                  Lorem Ipsum
-                %p.main-featured__description
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            %a.main-featured__link{:href=>'single-post.html'}
+              .main-featured__card
+                .main-featured__bg
+                  %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
+                  .main-featured__date 
+                    %p 
+                      19
+                    %p 
+                      Jul
+                .main-featured__body
+                  %p.main-featured__title 
+                    Lorem Ipsum
+                  %p.main-featured__description
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           .col-lg-4.col-md-6
-            .main-featured__card
-              .main-featured__bg
-                %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
-                .main-featured__date 
-                  %p 
-                    19
-                  %p 
-                    Jul
-              .main-featured__body
-                %p.main-featured__title 
-                  Lorem Ipsum
-                %p.main-featured__description
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            %a.main-featured__link{:href=>'single-post.html'}
+              .main-featured__card
+                .main-featured__bg
+                  %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
+                  .main-featured__date 
+                    %p 
+                      19
+                    %p 
+                      Jul
+                .main-featured__body
+                  %p.main-featured__title 
+                    Lorem Ipsum
+                  %p.main-featured__description
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         .main-general__button 
-          %a{:href=>""} Ver Más
+          %a{:href=>"blog.html"} Ver Más
     %section.main-contact
       .container.padding-top-bottom
-        %h2.main-general__title.fadeInUp.animated
+        %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
           Contáctanos
         .main-contact__text 
           %p
             Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque cursus lobortis interdum, tincidunt proin dui lacinia eros dignissim sollicitudin cras nisi. 
         .main-general__button 
-          %a{:href=>""} Ver Más
+          %a{:href=>"contact.html"} Ver Más
     %footer.main-footer#contact
       .main-footer__rrss
         .container
@@ -445,6 +448,6 @@
     %script{:crossorigin => "anonymous", :integrity => "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"}
     %script{src: 'assets/js/slick.min.js' }
     %script{src: 'assets/js/setting-slick.js' }
-    %script{src: 'assets/js/main.js' }
     %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js' }
+    %script{src: 'assets/js/main.js' }
 

@@ -877,6 +877,23 @@ button:focus {
   & .main-general__button {
     margin-top: 5rem;
   }
+
+  .main-featured__link {
+    color: initial;
+    transition: .5s;
+
+    &:hover .main-featured__title {
+    color: $blue;
+    transition: .5s;
+
+    }
+
+    &:hover .main-featured__date {
+      background: $blue;
+      transition: .5s;
+    }
+
+  }
 }
 
 .main-featured__card {
@@ -933,6 +950,7 @@ button:focus {
       width: 3rem;
       height: 3rem;
       top: 2rem;
+      transition: .5s;
       left: 2rem;
       justify-content: center;
       border: 1px solid #fff;
