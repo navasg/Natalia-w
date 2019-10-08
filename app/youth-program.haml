@@ -104,9 +104,9 @@
                   Oportunidades laborales
                 %ul.dropdown-menu
                   %li
-                    %a{:href => "category.html"} Media y alta gerencia
+                    %a{:href => "index.html"} Media y alta gerencia
                   %li
-                    %a{:href => "#"} Profesionales
+                    %a{:href => "index.html"} Profesionales
               %li.dropdown.nav-item
                 %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
                   Tendencias
@@ -120,7 +120,7 @@
     %section.main-banner2
       .container.padding-top-bottom
         .main-banner2__text
-          %h2.main-general__title
+          %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
             programas para jóvenes
           %p.main-general__subtitle
             Lorem ipsum
@@ -161,7 +161,7 @@
           %p
             Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque cursus lobortis interdum, tincidunt proin dui lacinia eros dignissim sollicitudin cras nisi. 
         .main-general__button 
-          %a{:href=>""} Ver Más
+          %a{:href=>"contact.html"} Ver Más
     %footer.main-footer#contact
       .main-footer__rrss
         .container
@@ -233,10 +233,10 @@
                   %a{:href=>''}
                     Tendencias
                 %li 
-                  %a{:href=>''}
+                  %a{:href=>'about.html'}
                     Conócenos
                 %li 
-                  %a{:href=>''}
+                  %a{:href=>'contact.html'}
                     Contáctanos
 
             .col-lg-4
@@ -248,13 +248,13 @@
       .main-powered 
         %p
           Copyright © 2019 
-          %a{:href=>""}Sigma Studios 
+          %a{:href=>"https://sigma.la/"}Sigma Studios 
 
     %script{src: 'assets/js/jquery.min.js' }
     %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"}
     %script{src: 'assets/js/slick.min.js' }
     %script{src: 'assets/js/setting-slick.js' }
-    %script{src: 'assets/js/main.js' }
     %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js' }
+    %script{src: 'assets/js/main.js' }
 

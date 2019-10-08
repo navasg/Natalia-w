@@ -1371,6 +1371,14 @@ button:focus {
   border-radius: 0 !important;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .navbar .dropdown-menu {
+    left: none;
+    transform: none;
+    width: 100%;
+  }
+}
+
 .navbar .dropdown-menu a {
   color: #fff;
   text-align: center;
@@ -1440,6 +1448,12 @@ button:focus {
 
 .nav-link:hover {
   color: #056cb6;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .nav-link:hover {
+    color: #fff;
+  }
 }
 
 .navbar-brand {
@@ -2073,6 +2087,12 @@ button:focus {
 
 .main-footer .main-powered p a {
   color: #fff;
+  transition: .5s;
+}
+
+.main-footer .main-powered p a:hover {
+  color: #056cb6;
+  transition: .5s;
 }
 
 .main-footer .main-footer__responsive {

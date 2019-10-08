@@ -345,12 +345,17 @@ button:focus {
     left: 50%;
     top: 100%;
     transform: translateX(-50%);
-
     padding: 0;
     // display: flex;
     // flex-direction: column;
     min-width: auto;
     border-radius: 0!important;
+
+    @include respond-to (xs) {
+      left: none;
+      transform: none;
+      width: 100%;
+    }
   
     & a {
       color: $white;
@@ -418,6 +423,10 @@ button:focus {
 
   &:hover {
     color: $blue;
+
+    @include respond-to(xs) {
+      color: $white;
+    }
   }
 }
 
@@ -1045,6 +1054,11 @@ button:focus {
 
       & a {
         color: $white;
+        transition: .5s;
+        &:hover {
+          color: $blue;
+          transition: .5s;
+        }
       }
     } 
   }
