@@ -89,31 +89,31 @@
                   Desafíos
                 %ul.dropdown-menu
                   %li
-                    %a{:href => "challenge.html"} Diversidad e inclusión
+                    %a{:href => "diversity-and-inclusion.html"} Diversidad e inclusión
                   %li
-                    %a{:href => "challenge.html"} Futuro del trabajo
+                    %a{:href => "future-of-work.html"} Futuro del trabajo
                   %li
-                    %a{:href => "challenge.html"} Futuro de la educación
+                    %a{:href => "future-of-education.html"} Futuro de la educación
                   %li
-                    %a{:href => "challenge.html"} Construcción de marca empleadora
+                    %a{:href => "brand-building.html"} Construcción de marca empleadora
                   %li
-                    %a{:href => "challenge.html"} Carrera de los sueños de los jovenes
-              %li.dropdown.nav-item
-                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                    %a{:href => "dream-race.html"} Carrera de los sueños de los jovenes
+              %li.nav-item
+                %a.nav-link{:target=>"_blank", :data-toggle => 'offcanvas', :href => "https://www.elempleo.com/sitios-empresariales/colombia/consultores-organizacionales", :role => "button"}
                   Oportunidades laborales
-                %ul.dropdown-menu
-                  %li
-                    %a{:href => "index.html"} Media y alta gerencia
-                  %li
-                    %a{:href => "index.html"} Profesionales
+                -# %ul.dropdown-menu
+                -#   %li
+                -#     %a{:href => "index.html"} Media y alta gerencia
+                -#   %li
+                -#     %a{:href => "index.html"} Profesionales
               %li.dropdown.nav-item
                 %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
                   Tendencias
                 %ul.dropdown-menu
                   %li
-                    %a{:href => "blog.html"} Consejos de carrera
+                    %a{:href => "career-tips.html"} Consejos de carrera
                   %li
-                    %a{:href => "blog-2.html"} gestión humana como aliado estratégico del negocio 
+                    %a{:href => "human-management.html"} Gestión humana como aliado estratégico del negocio 
               %li.nav-item
                 %a.nav-link{:href => 'about.html',:data-toggle => 'offcanvas' } Conócenos
             %ul.main-rrss__responsive
@@ -125,23 +125,52 @@
                 %img{:src=>'assets/img/social-linkedin-circular-button_5@3x.png'}
               %li
                 %img{:src=>'assets/img/social-linkedin-circular-button_6@3x.png'}
-
+   
     %section.main-banner2.about-banner{:style=>'background-image: url("assets/img/img_28.png")'}
       .container.padding-top-bottom
         .main-banner2__text
           %h2.main-general__title
             conócenos
           %p.main-general__subtitle
-            Lorem ipsum
 
     %section.about-us
       .container.padding-top-bottom
+        %h2.main-general__title--small
+          Acerca de nosotros
         .row
-          .col-lg-6.d-flex.flex-column.justify-content-center.main-order.col-md-6 
-            %h2.main-general__title--small
-              Acerca de nosotros
+          .col-lg-6.main-order.col-md-6 
             %p.main-general__description
-              Aliados en Colombia desde hace 4 años con Cia de Talentos, consultora de origen brasileño, especializada en la atracción, selección y desarrollo de personas, desde el inicio de sus carreras (practicantes, trainees, jóvenes profesionales, MBAs) hasta las posiciones de más alto nivel.
+              Somos una compañía de educación para la carrera, contamos con más de 19 años de experiencia acompañando a las empresas en el desarrollo de procesos relacionados con la gestión del talento humano, como: Hunting, Atracción, Selección y Evaluación de talento. Lideramos programas de jóvenes talentos (Trainees, Practicantes) programas de mentoría y estrategias de posicionamiento de marca empleadora. 
+              En los últimos años hemos impactado a más de 40 mil personas con nuestros programas de atracción, y más de 1 mil personas han sido vinculadas con las mejores empresas.
+            %p.main-general__description            
+              Ventaja Competitiva
+              %br
+              1) Experiencia con Multinacionales. 
+              %ul
+                %li
+                  Más de 18 años de experiencia trabajando exitosamente con empresas multinacionales.
+                %li
+                  Amplio conocimiento en la region de la industria y sus key players
+                %li
+                  Fieles representantes de la cultura y ADN de las empresas.
+            %p.main-general__description            
+              2) Metodología de trabajo.
+              %ul
+                %li
+                  Continuo mapeo del mercado, identificando talentos en la región.
+                %li
+                  Soluciones tailored made para cada Proyecto.
+                %li
+                  Trabajamos en equipo compartiendo conocimientos y recursos.
+                %li
+                  Espíritu entrepreneurs – ofrecemos servicio dedicado y personalizado.
+            %p.main-general__description
+              3) Somos globales con una escala para servicio de primer nivel.
+              %ul
+                %li 
+                  Red nacional, regional y global de contactos.
+                %li  
+                  La dimensión de nuestra organización nos permite ser rápidos y dinámicos. 
           .col-lg-6.d-flex.justify-content-center.col-md-6
             %img.about-us__img{:src=> 'assets/img/img-about.png'}
     %section.about-purpose
@@ -153,55 +182,74 @@
             %h2.main-general__title--small
               Nuestro propósito
             %p.main-general__description
-              Aliados en Colombia desde hace 4 años con Cia de Talentos, consultora de origen brasileño, especializada en la atracción, selección y desarrollo de personas, desde el inicio de sus carreras (practicantes, trainees, jóvenes profesionales, MBAs) hasta las posiciones de más alto nivel.
-          
+              Atraer y desarrollar el talento para que despliegue su mayor potencial en las mejores empresas, según sus sueños, aspiraciones y perfil, acompañándolos y orientándolos en la búsqueda de su realización laboral y en la construcción de su plan de vida. Así mismo, acompañar a las empresas en el desarrollo de su talento para transformar vidas y negocios. 
     %section.main-alliance
       .container.padding-top-bottom
         %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
           Alianzas 
         %p.main-general__subtitle 
-          LOREM IPSUM
+          Alianzas
         .main-alliance__description
           %p
-            Lorem ipsum dolor sit amet consectetur, adipiscing elit habitasse euismod, nullam accumsan imperdiet viverra. Platea vivamus diam habitasse suscipit suspendisse purus non felis facilisis, volutpat consequat et neque nisl cum blandit eget feugiat, augue fermentum ut mi hendrerit rhoncus in sapien.
+            Somos Representantes de Grupo Cia de Talentos la consultora más grande de selección de jóvenes en América latina y de Ema Partners, firma global de búsqueda de altos ejecutivos con presencia en 6 continentes y más de 40 oficinas en el mundo.
         .main-alliance__container 
           .main-alliance__item
             .main-alliance__img
-              %img{ :src => 'assets/img/alianza-imagen-1.png' }/
+              %a{:target=>'_blank', :href=>'https://www.grupociadetalentos.com/es'}
+                %img{ :src => 'assets/img/alianza-imagen-1.png' }/
             .main-alliance__details
-              %a{:href=>''}
+              %a{:target=>'_blank', :href=>''}
                 %img.main-alliance__icon{ :src => 'assets/img/play-button-1-copy.png' }/
-              %a.main-alliance__button{:href=>''}Ver Más
+              %a.main-alliance__button{:target=>'_blank', :href=>'https://www.grupociadetalentos.com/es'}Ver Más
           .main-alliance__item
             .main-alliance__img
-              %img{ :src => 'assets/img/captura-de-pantalla-2019-06-12-a-la-s-4-28-47-p-m.png' }/
+              %a{:target=>'_blank', :href=>'https://www.ema-partners.com/'}
+                %img{ :src => 'assets/img/captura-de-pantalla-2019-06-12-a-la-s-4-28-47-p-m.png' }/
             .main-alliance__details
-              %a{:href=>''}
-                %img.main-alliance__icon{ :src => 'assets/img/play-button-1-copy.png' }/
-              %a.main-alliance__button{:href=>''}Ver Más
+              %a{:target=>'_blank', :href=>''}
+                %img.main-alliance__icon{  :src => 'assets/img/play-button-1-copy.png' }/
+              %a.main-alliance__button{:target=>'_blank', :href=>'https://www.ema-partners.com/'}Ver Más      
     %section.main-experience 
       .container.padding-top-bottom
-        .row
-          .col-lg-6
-            %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
-              Experiencias de éxito 
-            %p.main-general__description 
-              Aliados en Colombia desde hace 4 años con Cia de Talentos, consultora de origen brasileño, especializada en la atracción, selección y desarrollo de personas, desde el inicio de sus carreras (practicantes, trainees, jóvenes profesionales, MBAs) hasta las posiciones de más alto nivel.
-            %p.main-general__description 
-              Actúa desde hace 25 años en Latinoamérica, y su portafolio de clientes, particularmente en el segmento de jóvenes, la convirtió en la compañía de referencia en el sector. Cia de Talentos entrega servicios a nivel global, con más de 800 clientes y un centenar de profesionales en su plantel. Tiene oficinas propias en Brasil, Argentina y México y alianzas locales en América Central, Chile, Colombia y Perú.  
-          .col-lg-6
-            .main-experience__carousel
-              .main-experiencie__item
-                %img{:src=>'assets/img/captura-6.png'}
-              .main-experiencie__item
-                %img{:src=>'assets/img/captura-6.png'}
+        .main-experience__carousel
+          .main-experiencie__item
+            .row
+              .col-lg-6
+                %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
+                  Centurylink 
+                %p.main-general__description 
+                  Trabajamos con Consultores Organizacionales hace aproximadamente 15 años. 15 años que han sido de construcción, trabajo en equipo y colaboración. Definitivamente, hemos encontrado en Consultores Organizacionales, un aliado estratégico para Recursos Humanos" Luz Helena Plaza Betancourth, Senior Manager HR Colombia - Ecuador.
+              .col-lg-6
+                .d-flex.justify-content-center
+                  %img{:src=>'assets/img/captura-6.png'}
+          .main-experiencie__item
+            .row
+              .col-lg-6
+                %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
+                  Trainee Basf
+                %p.main-general__description 
+                  La oportunidad de ser un Trainee, gracias al relacionamiento que tiene Cia de Talentos, ha impactado en gran manera el desarrollo de mi carrera” Jesus Londoño Orozco, Trainee Basf. 
+              .col-lg-6
+                .d-flex.justify-content-center
+                  %img{:src=>'assets/img/captura-6.png'}
+          .main-experiencie__item
+            .row
+              .col-lg-6
+                %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
+                  Trainee DSM
+                %p.main-general__description 
+                  Tú siempre estás enterado de cómo vas en el proceso de selección, en qué etapa vas, recibes las respuestas que tienen los entrevistadores sobre ti,todo el tiempo estás muy informado y puedes conectarte con ellos para tener una respuesta oportuna” Juan Diego Durán, Trainee DSM.  
+              .col-lg-6
+                .d-flex.justify-content-center
+                  %img{:src=>'assets/img/captura-6.png'}
+
     %section.main-contact
       .container.padding-top-bottom
         %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
           Contáctanos
         .main-contact__text 
           %p
-            Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque cursus lobortis interdum, tincidunt proin dui lacinia eros dignissim sollicitudin cras nisi. 
+            Disfrutamos acompañar a las personas en la búsqueda de su realización laboral y en la construcción de su plan de vida, y a las empresas en el desarrollo de su talento para transformar vidas y negocios. Conoce más 
         .main-general__button 
           %a{:href=>"contact.html"} Ver Más
     %footer.main-footer#contact
@@ -210,31 +258,31 @@
           .row  
             .col-lg-3.main-footer__card
               .main-footer__responsive
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"www.linkedin.com/company/consultores-organizacionales?trk=O-ovw-curr_pos"}
                   %img{:src=> "assets/img/social-linkedin-circular-button_3@2x.png"}
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"https://www.facebook.com/ngconsultoresorg/"}
                   %img.facebook-logo-in-circular-button-outlined-social-symbol{:src => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol@2x.png"}
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"https://instagram.com/consultoresorg?utm_source=ig_profile_share&igshid=j9gnpdxmpqy8"}
                   %img{:src=> "assets/img/social-linkedin-circular-button@2x.png"}
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"https://www.youtube.com/channel/UCR1asI8Q6PybxSu2wWcSCEg?view_as=subscriber"}
                   %img{:src=> "assets/img/social-linkedin-circular-button_2@2x.png"}
               .main-footer__content
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"www.linkedin.com/company/consultores-organizacionales?trk=O-ovw-curr_pos"}
                   %img{:src=> "assets/img/social-linkedin-circular-button_3.png"}
                   Linkedin 
             .col-lg-3.main-footer__card
               .main-footer__content
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"https://www.facebook.com/ngconsultoresorg/"}
                   %img.facebook-logo-in-circular-button-outlined-social-symbol{:src => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol.png", :srcset => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol@2x.png 2x,\n             assets/img/facebook-logo-in-circular-button-outlined-social-symbol@3x.png 3x"}/
                   Facebook 
             .col-lg-3.main-footer__card
               .main-footer__content
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"https://instagram.com/consultoresorg?utm_source=ig_profile_share&igshid=j9gnpdxmpqy8"}
                   %img{:src=> "assets/img/social-linkedin-circular-button.png"}
                   Instagram 
             .col-lg-3.main-footer__card
               .main-footer__content
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"https://www.youtube.com/channel/UCR1asI8Q6PybxSu2wWcSCEg?view_as=subscriber"}
                   %img{:src=> "assets/img/social-linkedin-circular-button_2.png"}
                   Youtube 
       .main-footer__info

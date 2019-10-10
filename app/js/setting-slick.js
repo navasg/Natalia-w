@@ -38,6 +38,9 @@ $('.main-banner__content').slick({
 
 $('.main-experience__carousel').slick({
   slidesToShow: 1,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
   slidesToScroll: 1,
   dots: false,
   arrows: true,
@@ -63,7 +66,6 @@ $('.main-experience__carousel').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: false,
-      autoplay: true,
       autoplaySpeed: 1000,
     }
   }

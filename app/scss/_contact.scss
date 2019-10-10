@@ -1,3 +1,7 @@
+.main-general__subtitle--contact {
+  letter-spacing: 2px!important;
+}
+
 .contact-form {
   & label, & .main-general__title--small, & .main-form__container-button {
     width: 100%!important;
@@ -5,6 +9,8 @@
   .main-general__title--small{
     font-size: 1.3rem!important;
   }
+
+
 
   .contact-info {
     padding-left: 7rem;

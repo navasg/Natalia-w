@@ -12,6 +12,7 @@
     %link{ rel: 'stylesheet', href:'assets/css/main.css' }/
     %link{ rel: 'stylesheet', href:'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css' }/
     %link{:href => "assets/img/favicon.png", :rel => "shortcut icon"}/
+
     %link{ href:'https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Open+Sans:300,400,600,700,800|Roboto:300,400,500,700,900&display=swap',  rel:'stylesheet' }/
   %body
     %header.fixed-top.navbar-fixed-js
@@ -125,252 +126,40 @@
                 %img{:src=>'assets/img/social-linkedin-circular-button_5@3x.png'}
               %li
                 %img{:src=>'assets/img/social-linkedin-circular-button_6@3x.png'}
-    %section.main-banner
-      .main-banner__content
-        .main-banner__item
-          .main-banner__text.wow.animated.fadeInRight{:style=>"visibility: visible; animation-delay: .3s  ;"}
-            .main-banner__logo
-              %img{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
-            .main-banner__title
-              %p Desarrollamos talentos 
-            .main-banner__subtitle 
-              %p  
-                para transformar vidas y negocios 
-          .main-banner__img
-            %img{ :src => 'assets/img/image.png' }/
-        .main-banner__item
-          .main-banner__text
-            .main-banner__logo
-              %img{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
-            .main-banner__title
-              %p Lorem Ipsum
-            .main-banner__subtitle 
-              %p  
-                dolor sit amet consectetur, a
-                dipiscing elit aptent.
-          .main-banner__img
-            %img{ :src => 'assets/img/image.png' }/
-        -# .main-banner__item
-        -#   .main-banner__text
-        -#     .main-banner__logo
-        -#       %img{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
-        -#     .main-banner__title
-        -#       %p Lorem Ipsum
-        -#     .main-banner__subtitle 
-        -#       %p  
-        -#         dolor sit amet consectetur, a
-        -#         dipiscing elit aptent.
-        -#   .main-banner__img
-        -#     %img{ :src => 'assets/img/image.png' }/
-    %section.main-cal
-      .container
+    %section.main-banner2{:style=>'background-image: url("assets/img/img_55.png")'}
+      .container.padding-top-bottom
+        .main-banner2__text
+          %h2.main-general__title.main-general__title--challenge.wow.animated.fadeInUp{:style=>"visibility: visible;"}
+            Estudios e Investigaciones
+    %section.main-challenge
+      .container.padding-top-bottom
         .row
-          .col-lg-3.col-md-6
-            .main-cal__item
-              %p.main-cal__title
-                +40.000
-              %p.main-cal__subtitle
-                + De 40.000 personas impactadas en los últimos años con nuestros programas de atracción.
-          .col-lg-3.col-md-6
-            .main-cal__item
-              %img.main-cal__img{ :src => 'assets/img/user.png' }/
-          .col-lg-3.col-md-6
-            .main-cal__item
-              %p.main-cal__title
-                +800
-              %p.main-cal__subtitle
-                + De 1.000 personas han sido vinculadas con las mejores empresas
-          .col-lg-3.col-md-6
-            .main-cal__item
-              %img.main-cal__img{ :src => 'assets/img/identification.png' }/
-    %section.main-alliance
+          .col-lg-6.d-flex.justify-content-center.align-items-center.col-md-6
+            %img.main-challenge__img{:src=> 'assets/img/369498-pb-1-g-7-g-820.png'}
+          .col-lg-6.d-flex.flex-column.justify-content-center.main-order.col-md-6 
+            %h2.main-general__title--small
+              Carrera de los Sueños de los Jóvenes
+            %p.main-general__description
+              Como parte de nuestro propósito, cada año desarrollamos el estudio Carrera de los Sueños para mapear las preferencias y expectativas de los jóvenes en relación al mercado laboral. Hace 18 años iniciamos en Brasil y hoy contamos con la participación de 9 países en Latinoamérica y más de 150 mil jóvenes.  En Colombia este año presentamos la 9ª edición de la encuesta en el que participaron más de 28 mil estudiantes y graduados, lo que nos permite identificar tendencias e información de valor para empresas y universidades que buscan mejores prácticas en la gestión y desarrollo de jóvenes talentos.  
+    %section.main-form
       .container.padding-top-bottom
-        %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
-          Alianzas 
-        %p.main-general__subtitle 
-          Alianzas
-        .main-alliance__description
-          %p
-            Somos Representantes de Grupo Cia de Talentos la consultora más grande de selección de jóvenes en América latina y de Ema Partners, firma global de búsqueda de altos ejecutivos con presencia en 6 continentes y más de 40 oficinas en el mundo.
-        .main-alliance__container 
-          .main-alliance__item
-            .main-alliance__img
-              %a{:target=>'_blank', :href=>'https://www.grupociadetalentos.com/es'}
-                %img{ :src => 'assets/img/alianza-imagen-1.png' }/
-            .main-alliance__details
-              %a{:target=>'_blank', :href=>''}
-                %img.main-alliance__icon{ :src => 'assets/img/play-button-1-copy.png' }/
-              %a.main-alliance__button{:target=>'_blank', :href=>'https://www.grupociadetalentos.com/es'}Ver Más
-          .main-alliance__item
-            .main-alliance__img
-              %a{:target=>'_blank', :href=>'https://www.ema-partners.com/'}
-                %img{ :src => 'assets/img/captura-de-pantalla-2019-06-12-a-la-s-4-28-47-p-m.png' }/
-            .main-alliance__details
-              %a{:target=>'_blank', :href=>''}
-                %img.main-alliance__icon{  :src => 'assets/img/play-button-1-copy.png' }/
-              %a.main-alliance__button{:target=>'_blank', :href=>'https://www.ema-partners.com/'}Ver Más
-    %section.main-solutions#solutions
-      .main-solutions__width
-        .container.padding-top-bottom
-          %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
-            Soluciones 
-          %p.main-general__subtitle 
-            Soluciones 
-          .row
-            .col-lg-4.main-solutions__colum
-              .main-solutions__item
-                .main-solutions__icon
-                  %img{:src=>"assets/img/icon_9.png"}/
-                .main-solutions__text
-                  %p
-                    Gestión de talento - programas de jóvenes, practicantes, trainees.
-
-            .col-lg-4.main-solutions__colum
-              .main-solutions__item
-                .main-solutions__icon
-                  %img{:src=>"assets/img/icon_8.png"}/
-                .main-solutions__text
-                  %p
-                    Identificación de talento.
-            .col-lg-4.main-solutions__colum
-              .main-solutions__item
-                .main-solutions__icon
-                  %img{:src=>"assets/img/icon_7.png"}/
-                .main-solutions__text
-                  %p
-                    Mentoría empresarial desarrollo de habilidades en doble vía mentor y mente
-                  %p.text-right.main-solutions__more 
-                    +
-            .col-lg-4.main-solutions__colum
-              .main-solutions__item
-                .main-solutions__icon
-                  %img{:src=>"assets/img/icon_6.png"}/
-                .main-solutions__text
-                  %p
-                    Acompañamiento de carrera en todas las fases y situaciones
-            .col-lg-4.main-solutions__colum
-              .main-solutions__item
-                .main-solutions__icon
-                  %img{:src=>"assets/img/icon_5.png"}/
-                .main-solutions__text
-                  %p
-                    Desarrollo de personas para el logrode su máximo potencial
-            .col-lg-4.main-solutions__colum
-              .main-solutions__item
-                .main-solutions__icon
-                  %img{:src=>"assets/img/icon_4.png"}/
-                .main-solutions__text
-                  %p
-                    Mapeos de perfil, habilidades y potencial.
-            .col-lg-4.main-solutions__colum
-              .main-solutions__item
-                .main-solutions__icon
-                  %img{:src=>"assets/img/icon_3.png"}/
-                .main-solutions__text
-                  %p
-                    Gestión completa de programas de selección y desarrollo
-            .col-lg-4.main-solutions__colum
-              .main-solutions__item
-                .main-solutions__icon
-                  %img{:src=>"assets/img/icon_2.png"}/
-                .main-solutions__text
-                  %p
-                    Posicionamiento de marca empleadora diagnósticos y estrategias.
-            .col-lg-4.main-solutions__colum
-              .main-solutions__item
-                .main-solutions__icon
-                  %img{:src=>"assets/img/icon.png"}/
-                .main-solutions__text
-                  %p
-                    Investigaciones analisis y desarrollo de contenidos y tendencias
-          .main-general__button
-            %a{:href=>""} Ver Más
-    %section.main-experience 
-      .container.padding-top-bottom
-        .main-experience__carousel
-          .main-experiencie__item
-            .row
-              .col-lg-6
-                %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
-                  Centurylink 
-                %p.main-general__description 
-                  Trabajamos con Consultores Organizacionales hace aproximadamente 15 años. 15 años que han sido de construcción, trabajo en equipo y colaboración. Definitivamente, hemos encontrado en Consultores Organizacionales, un aliado estratégico para Recursos Humanos" Luz Helena Plaza Betancourth, Senior Manager HR Colombia - Ecuador.
-              .col-lg-6
-                .d-flex.justify-content-center
-                  %img{:src=>'assets/img/captura-6.png'}
-          .main-experiencie__item
-            .row
-              .col-lg-6
-                %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
-                  Trainee Basf
-                %p.main-general__description 
-                  La oportunidad de ser un Trainee, gracias al relacionamiento que tiene Cia de Talentos, ha impactado en gran manera el desarrollo de mi carrera” Jesus Londoño Orozco, Trainee Basf. 
-              .col-lg-6
-                .d-flex.justify-content-center
-                  %img{:src=>'assets/img/captura-6.png'}
-          .main-experiencie__item
-            .row
-              .col-lg-6
-                %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
-                  Trainee DSM
-                %p.main-general__description 
-                  Tú siempre estás enterado de cómo vas en el proceso de selección, en qué etapa vas, recibes las respuestas que tienen los entrevistadores sobre ti,todo el tiempo estás muy informado y puedes conectarte con ellos para tener una respuesta oportuna” Juan Diego Durán, Trainee DSM.  
-              .col-lg-6
-                .d-flex.justify-content-center
-                  %img{:src=>'assets/img/captura-6.png'}
-
-    %section.main-featured
-      .container.padding-top-bottom
-        %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
-          Tendencias 
-        .row
-          .col-lg-4.col-md-6.wow.animated.zoomIn{:style=>"visibility: visible"}
-            %a.main-featured__link{:href=>'single-post.html'}
-              .main-featured__card
-                .main-featured__bg
-                  %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
-                  .main-featured__date 
-                    %p 
-                      19
-                    %p 
-                      Jul
-                .main-featured__body
-                  %p.main-featured__title 
-                    Lorem Ipsum
-                  %p.main-featured__description
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          .col-lg-4.col-md-6.wow.animated.zoomIn{:style=>"visibility: visible"}
-            %a.main-featured__link{:href=>'single-post.html'}
-              .main-featured__card
-                .main-featured__bg
-                  %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
-                  .main-featured__date 
-                    %p 
-                      19
-                    %p 
-                      Jul
-                .main-featured__body
-                  %p.main-featured__title 
-                    Lorem Ipsum
-                  %p.main-featured__description
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          .col-lg-4.col-md-.wow.animated.zoomIn{:style=>"visibility: visible"}
-            %a.main-featured__link{:href=>'single-post.html'}
-              .main-featured__card
-                .main-featured__bg
-                  %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
-                  .main-featured__date 
-                    %p 
-                      19
-                    %p 
-                      Jul
-                .main-featured__body
-                  %p.main-featured__title 
-                    Lorem Ipsum
-                  %p.main-featured__description
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        .main-general__button 
-          %a{:href=>"blog.html"} Ver Más
+        %form 
+          %h2.main-general__title--small
+            Envíanos un mensaje
+          %label.d-flex.flex-column 
+            Nombre
+            %input{:type=>'text'}
+          %label.d-flex.flex-column 
+            Email
+            %input{:type=>'email'}
+          %label.d-flex.flex-column 
+            Asunto
+            %input{:type=>'text'}
+          %label.d-flex.flex-column 
+            Mensaje
+            %textarea{:type=>'text'}
+          .main-form__container-button
+            %button.main-form__button{:type=> 'submit'} Enviar
     %section.main-contact
       .container.padding-top-bottom
         %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}

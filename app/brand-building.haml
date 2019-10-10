@@ -90,31 +90,31 @@
                   Desafíos
                 %ul.dropdown-menu
                   %li
-                    %a{:href => "challenge.html"} Diversidad e inclusión
+                    %a{:href => "diversity-and-inclusion.html"} Diversidad e inclusión
                   %li
-                    %a{:href => "challenge.html"} Futuro del trabajo
+                    %a{:href => "future-of-work.html"} Futuro del trabajo
                   %li
-                    %a{:href => "challenge.html"} Futuro de la educación
+                    %a{:href => "future-of-education.html"} Futuro de la educación
                   %li
-                    %a{:href => "challenge.html"} Construcción de marca empleadora
+                    %a{:href => "brand-building.html"} Construcción de marca empleadora
                   %li
-                    %a{:href => "challenge.html"} Carrera de los sueños de los jovenes
-              %li.dropdown.nav-item
-                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                    %a{:href => "dream-race.html"} Carrera de los sueños de los jovenes
+              %li.nav-item
+                %a.nav-link{:target=>"_blank", :data-toggle => 'offcanvas', :href => "https://www.elempleo.com/sitios-empresariales/colombia/consultores-organizacionales", :role => "button"}
                   Oportunidades laborales
-                %ul.dropdown-menu
-                  %li
-                    %a{:href => "index.html"} Media y alta gerencia
-                  %li
-                    %a{:href => "index.html"} Profesionales
+                -# %ul.dropdown-menu
+                -#   %li
+                -#     %a{:href => "index.html"} Media y alta gerencia
+                -#   %li
+                -#     %a{:href => "index.html"} Profesionales
               %li.dropdown.nav-item
                 %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
                   Tendencias
                 %ul.dropdown-menu
                   %li
-                    %a{:href => "blog.html"} Consejos de carrera
+                    %a{:href => "career-tips.html"} Consejos de carrera
                   %li
-                    %a{:href => "blog-2.html"} gestión humana como aliado estratégico del negocio 
+                    %a{:href => "human-management.html"} Gestión humana como aliado estratégico del negocio 
               %li.nav-item
                 %a.nav-link{:href => 'about.html',:data-toggle => 'offcanvas' } Conócenos
             %ul.main-rrss__responsive
@@ -126,123 +126,22 @@
                 %img{:src=>'assets/img/social-linkedin-circular-button_5@3x.png'}
               %li
                 %img{:src=>'assets/img/social-linkedin-circular-button_6@3x.png'}
-    %section.banner-small
+    %section.main-banner2{:style=>'background-image: url("assets/img/img_55.png")'}
+      .container.padding-top-bottom
+        .main-banner2__text
+          %h2.main-general__title.main-general__title--challenge.wow.animated.fadeInUp{:style=>"visibility: visible;"}
+            Construcción de Marca Empleadora 
+    %section.main-challenge
       .container.padding-top-bottom
         .row
-          .col-lg-7
-            %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
-              consejo de carrera
-            %p.main-general__subtitle
-              Lorem ipsum
-          .col-lg-5
-            %nav{"aria-label" => "breadcrumb"}
-              .breadcrumb
-                .breadcrumb-item
-                  %a{:href => "#"} Home
-                .breadcrumb-item.active{"aria-current" => "page"} Library
-
-    %section.main-blog__all 
-      .container
-        .row.padding-top-bottom
-          .col-lg-8
-            .row
-              .col-lg-6.col-md-6
-                %a.main-featured__link{:href=>'single-post.html'}
-                  .main-featured__card
-                    .main-featured__bg
-                      %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
-                      .main-featured__date 
-                        %p 
-                          19
-                        %p 
-                          Jul
-                    .main-featured__body
-                      %p.main-featured__title 
-                        Lorem Ipsum
-                      %p.main-featured__description
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              .col-lg-6.col-md-6
-                %a.main-featured__link{:href=>'single-post.html'}
-                  .main-featured__card
-                    .main-featured__bg
-                      %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
-                      .main-featured__date 
-                        %p 
-                          19
-                        %p 
-                          Jul
-                    .main-featured__body
-                      %p.main-featured__title 
-                        Lorem Ipsum
-                      %p.main-featured__description
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              .col-lg-6.col-md-6
-                %a.main-featured__link{:href=>'single-post.html'}
-                  .main-featured__card
-                    .main-featured__bg
-                      %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
-                      .main-featured__date 
-                        %p 
-                          19
-                        %p 
-                          Jul
-                    .main-featured__body
-                      %p.main-featured__title 
-                        Lorem Ipsum
-                      %p.main-featured__description
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.      
-          .col-lg-4
-            .main-sidebar
-              .container.padding-top-bottom
-                .main-search
-                  %label
-                    %input{:type=>"search", :placeholder=>'Buscar'}/
-                    %img{:src=>'assets/img/shape-2.png'}
-                .main-recent-post
-                  %p.main-featured__title 
-                    Publicaciones Recientes
-                  %ul.list-sidebar
-                    %li
-                      %a{:href=>""}
-                        %i.fa.fa-caret-right
-                        Lorem Ipsum
-                    %li
-                      %a{:href=>""}
-                        %i.fa.fa-caret-right
-                        Lorem Ipsum
-                    %li
-                      %a{:href=>""}
-                        %i.fa.fa-caret-right
-                        Lorem Ipsum
-                .main-recent-post
-                  %p.main-featured__title 
-                    Comentarios Recientes
-                  %ul.list-sidebar
-                    %li
-                      %a{:href=>""}
-                        %i.fa.fa-caret-right
-                        Lorem Ipsum
-                    %li
-                      %a{:href=>""}
-                        %i.fa.fa-caret-right
-                        Lorem Ipsum
-                    %li
-                      %a{:href=>""}
-                        %i.fa.fa-caret-right
-                        Lorem Ipsum
-          %nav.nav-paginator{"aria-label" => "..."}
-            %ul.pagination.pagination-sm
-              %li.page-item.active{"aria-current" => "page"}
-                %span.page-link
-                  1
-                  %span.sr-only (current)
-              %li.page-item
-                %a.page-link{:href => "#"} 2
-              %li.page-item
-                %a.page-link{:href => "#"} 3
-                      
-
-
+          .col-lg-6.d-flex.justify-content-center.align-items-center.col-md-6
+            %img.main-challenge__img{:src=> 'assets/img/369498-pb-1-g-7-g-820.png'}
+          .col-lg-6.d-flex.flex-column.justify-content-center.main-order.col-md-6 
+            %h2.main-general__title--small
+              Construcción de Marca Empleadora 
+            %p.main-general__description
+              Hace un tiempo era común pensar que los candidatos aceptaban una propuesta laboral por el simple hecho de ofrecerle un salario competitivo, pero la realidad de hoy en día dista mucho de lo que se pensaba antes, ahora el talento humano selecciona a la empresa en la que desea trabajar no solo por el salario o el tipo de trabajo que va a realizar, sino también por la reputación de la compañía.
+              Es por esto, que la gestión de la marca se convierte en una estrategia primordial no solo para atraer al mejor talento sino también para fidelizar a los colaboradores. Pero ¿Qué se necesita para gestionar la imagen?  Sabemos cómo potenciar tu marca empleadora y te podemos acompañar para Atraer, Enamorar y Fidelizar al Mejor Talento. 
     %section.main-form
       .container.padding-top-bottom
         %form 
@@ -264,11 +163,11 @@
             %button.main-form__button{:type=> 'submit'} Enviar
     %section.main-contact
       .container.padding-top-bottom
-        %h2.main-general__title.fadeInUp.animated
+        %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
           Contáctanos
         .main-contact__text 
           %p
-            Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque cursus lobortis interdum, tincidunt proin dui lacinia eros dignissim sollicitudin cras nisi. 
+            Disfrutamos acompañar a las personas en la búsqueda de su realización laboral y en la construcción de su plan de vida, y a las empresas en el desarrollo de su talento para transformar vidas y negocios. Conoce más 
         .main-general__button 
           %a{:href=>"contact.html"} Ver Más
     %footer.main-footer#contact
@@ -277,31 +176,31 @@
           .row  
             .col-lg-3.main-footer__card
               .main-footer__responsive
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"www.linkedin.com/company/consultores-organizacionales?trk=O-ovw-curr_pos"}
                   %img{:src=> "assets/img/social-linkedin-circular-button_3@2x.png"}
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"https://www.facebook.com/ngconsultoresorg/"}
                   %img.facebook-logo-in-circular-button-outlined-social-symbol{:src => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol@2x.png"}
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"https://instagram.com/consultoresorg?utm_source=ig_profile_share&igshid=j9gnpdxmpqy8"}
                   %img{:src=> "assets/img/social-linkedin-circular-button@2x.png"}
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"https://www.youtube.com/channel/UCR1asI8Q6PybxSu2wWcSCEg?view_as=subscriber"}
                   %img{:src=> "assets/img/social-linkedin-circular-button_2@2x.png"}
               .main-footer__content
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"www.linkedin.com/company/consultores-organizacionales?trk=O-ovw-curr_pos"}
                   %img{:src=> "assets/img/social-linkedin-circular-button_3.png"}
                   Linkedin 
             .col-lg-3.main-footer__card
               .main-footer__content
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"https://www.facebook.com/ngconsultoresorg/"}
                   %img.facebook-logo-in-circular-button-outlined-social-symbol{:src => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol.png", :srcset => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol@2x.png 2x,\n             assets/img/facebook-logo-in-circular-button-outlined-social-symbol@3x.png 3x"}/
                   Facebook 
             .col-lg-3.main-footer__card
               .main-footer__content
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"https://instagram.com/consultoresorg?utm_source=ig_profile_share&igshid=j9gnpdxmpqy8"}
                   %img{:src=> "assets/img/social-linkedin-circular-button.png"}
                   Instagram 
             .col-lg-3.main-footer__card
               .main-footer__content
-                %a{:href=>""}
+                %a{:target=>"_blank", :href=>"https://www.youtube.com/channel/UCR1asI8Q6PybxSu2wWcSCEg?view_as=subscriber"}
                   %img{:src=> "assets/img/social-linkedin-circular-button_2.png"}
                   Youtube 
       .main-footer__info

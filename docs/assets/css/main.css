@@ -302,7 +302,7 @@ body {
 
 .main-blog__all .main-featured__card {
   margin-top: 0;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .main-sidebar {
@@ -624,6 +624,10 @@ body {
   color: #000;
 }
 
+.main-general__subtitle--contact {
+  letter-spacing: 2px !important;
+}
+
 .contact-form label, .contact-form .main-general__title--small, .contact-form .main-form__container-button {
   width: 100% !important;
 }
@@ -669,14 +673,15 @@ body {
   content: "" !important;
 }
 
+.about-us ul {
+  padding-left: 1rem;
+  color: #939393;
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   .about-us .padding-top-bottom {
     padding-bottom: 0;
   }
-}
-
-.about-us .main-general__description, .about-us .main-general__title--small {
-  padding-left: 6rem;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -693,8 +698,7 @@ body {
 }
 
 .about-us .about-us__img {
-  width: 381px;
-  height: 394px;
+  width: 100%;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -863,7 +867,7 @@ body {
   height: 40px;
   width: 40px;
   top: 55%;
-  left: 5%;
+  right: 41%;
   transition: all .5s;
   width: 44px;
   height: 78px;
@@ -1032,7 +1036,7 @@ body {
 }
 
 html {
-  font-size: 14px;
+  font-size: 12px;
   scroll-behavior: smooth;
 }
 
@@ -1104,7 +1108,7 @@ body :focus {
   color: #888888;
   font-weight: bold;
   font-size: .8rem;
-  padding: .6rem 1rem;
+  padding: .9rem 1.5rem;
   letter-spacing: 4.2px;
 }
 
@@ -1117,7 +1121,6 @@ body :focus {
 
 .main-prenavbar {
   background: #056cb6;
-  padding: .8rem;
   font-size: .9rem;
 }
 
@@ -1782,8 +1785,8 @@ button:focus {
   border: solid 2px #d8d8d8;
   text-transform: uppercase;
   color: #888888;
+  padding: .8rem 1rem;
   font-size: .8rem;
-  padding: .3rem .5rem;
   letter-spacing: 4.2px;
   margin-left: 1rem;
   transition: .5s;
@@ -1839,10 +1842,10 @@ button:focus {
 .main-solutions .main-solutions__item {
   text-align: center;
   color: #fff;
-  height: 100%;
+  height: 18rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 2.5rem .5rem;
 }
 
@@ -1880,7 +1883,7 @@ button:focus {
 }
 
 .main-solutions .main-solutions__width {
-  width: 57%;
+  width: 50%;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1893,11 +1896,6 @@ button:focus {
   .main-experience .main-experience__carousel {
     margin-top: 2rem;
   }
-}
-
-.main-experience .main-experiencie__item {
-  display: flex;
-  justify-content: center;
 }
 
 .main-experience .main-general__title {
@@ -1944,7 +1942,7 @@ button:focus {
 }
 
 .main-featured__card {
-  height: 27rem;
+  height: 32rem;
   margin-top: 2rem;
   transition: .4s;
 }
@@ -1973,6 +1971,12 @@ button:focus {
   font-size: 1.1rem;
   font-weight: bold;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
 }
 
 .main-featured__card .main-featured__description {
@@ -2063,12 +2067,10 @@ button:focus {
 .main-contact .main-general__button a {
   color: #fff;
   display: flex;
+  letter-spacing: 0.41px;
   justify-content: center;
-  display: flex;
-  justify-content: center;
-  display: flex;
+  padding: .9rem 3.5rem;
   transition: .5s;
-  justify-content: center;
 }
 
 .main-footer .main-powered {
@@ -2160,6 +2162,7 @@ button:focus {
 
 .main-footer .main-footer__content {
   display: flex;
+  text-transform: uppercase;
   align-items: center;
   padding: 4rem;
   justify-content: center;
@@ -2273,7 +2276,7 @@ button:focus {
 }
 
 .main-banner2 .main-banner2__text {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(0, 0, 0, 0.38);
   top: 0;
   position: absolute;
   width: 100%;
@@ -2477,7 +2480,6 @@ button:focus {
 
 .main-workshops .main-general__description {
   text-align: center;
-  width: 70%;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -2651,14 +2653,29 @@ button:focus {
   }
 }
 
-.main-challenge .main-general__description {
-  padding-right: 6rem;
+.main-general__title--challenge {
+  position: relative;
+}
+
+.main-general__title--challenge::before {
+  content: '';
+  position: absolute;
+  background-color: #056cb6;
+  width: 3.5rem;
+  height: 4px;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
   .main-challenge .main-general__description {
     padding-right: 0;
   }
+}
+
+.main-challenge .main-challenge__img {
+  height: 400px;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {

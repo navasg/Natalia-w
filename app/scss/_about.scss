@@ -5,20 +5,21 @@
     position: relative;
     &::before {
       content: ''!important;
-     
     }
   }
 }
 
 .about-us {
+  ul {
+    padding-left: 1rem;
+    color: #939393;
+  }
   .padding-top-bottom {
     @include respond-to(xs) {
       padding-bottom: 0;
     }
   }
   .main-general__description, .main-general__title--small {
-    padding-left: 6rem;
-
     @include respond-to(xs) {
       padding-left: 0;
       margin-bottom: 2rem;
@@ -30,8 +31,8 @@
   }
 
   .about-us__img {
-    width: 381px;
-    height: 394px;
+    width: 100%;
+    // height: 394px;
 
     @include respond-to(xs) {
       width: 100%;
