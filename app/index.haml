@@ -28,16 +28,16 @@
             .col-lg-6
               %ul.main-prenavbar__rrss.d-flex.align-items-center
                 %li
-                  %a{:href=>""}
+                  %a{:target=>"_blank", :href=>"www.linkedin.com/company/consultores-organizacionales?trk=O-ovw-curr_pos"}
                     %img{:src=> 'assets/img/social-linkedin-circular-button_4.png'}
                 %li
-                  %a{:href=>""}
+                  %a{:target=>"_blank", :href=>"https://www.facebook.com/ngconsultoresorg/"}
                     %img{:src=> 'assets/img/facebook-logo-in-circular-button-outlined-social-symbol_2.png'}
                 %li
-                  %a{:href=>""}
+                  %a{:target=>"_blank", :href=>"https://instagram.com/consultoresorg?utm_source=ig_profile_share&igshid=j9gnpdxmpqy8"}
                     %img{:src=> 'assets/img/social-linkedin-circular-button_5.png'}
                 %li
-                  %a{:href=>""}
+                  %a{:target=>"_blank", :href=>"https://www.youtube.com/channel/UCR1asI8Q6PybxSu2wWcSCEg?view_as=subscriber"}
                     %img{:src=> 'assets/img/social-linkedin-circular-button_6.png'}
                 %li
                   .dropdown
@@ -81,7 +81,7 @@
                   %li
                     %a{:href => "evaluation-and-career.html"} Evaluación y carrera
                   %li
-                    %a{:href => ""} Consultoria inhouse
+                    %a{:href => "inhouse-consultant.html"} Consultoria inhouse
                   %li
                     %a{:href => "employer-brand.html"} Marca empleadora
               %li.dropdown.nav-item
@@ -137,19 +137,20 @@
               %p  
                 para transformar vidas y negocios 
           .main-banner__img
-            %img{ :src => 'assets/img/image.png' }/
-        .main-banner__item
-          .main-banner__text
-            .main-banner__logo
-              %img{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
-            .main-banner__title
-              %p Lorem Ipsum
-            .main-banner__subtitle 
-              %p  
-                dolor sit amet consectetur, a
-                dipiscing elit aptent.
-          .main-banner__img
-            %img{ :src => 'assets/img/image.png' }/
+            %video{:autoplay => "true", "data-object-fit" => "cover", :loop => "", :muted => "", :playsinline => "", :poster => "", :preload => "auto"}
+              %source{"data-src" => "", :src => "assets/img/sliders/slider-1.mp4", :type => "video/mp4"}
+        -# .main-banner__item
+        -#   .main-banner__text
+        -#     .main-banner__logo
+        -#       %img{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
+        -#     .main-banner__title
+        -#       %p Lorem Ipsum
+        -#     .main-banner__subtitle 
+        -#       %p  
+        -#         dolor sit amet consectetur, a
+        -#         dipiscing elit aptent.
+        -#   .main-banner__img
+        -#     %img{ :src => 'assets/img/image.png' }/
         -# .main-banner__item
         -#   .main-banner__text
         -#     .main-banner__logo
@@ -198,7 +199,7 @@
               %a{:target=>'_blank', :href=>'https://www.grupociadetalentos.com/es'}
                 %img{ :src => 'assets/img/alianza-imagen-1.png' }/
             .main-alliance__details
-              %a{:target=>'_blank', :href=>''}
+              %a{:target=>'_blank', :href=>'https://www.grupociadetalentos.com/es'}
                 %img.main-alliance__icon{ :src => 'assets/img/play-button-1-copy.png' }/
               %a.main-alliance__button{:target=>'_blank', :href=>'https://www.grupociadetalentos.com/es'}Ver Más
           .main-alliance__item
@@ -206,7 +207,7 @@
               %a{:target=>'_blank', :href=>'https://www.ema-partners.com/'}
                 %img{ :src => 'assets/img/captura-de-pantalla-2019-06-12-a-la-s-4-28-47-p-m.png' }/
             .main-alliance__details
-              %a{:target=>'_blank', :href=>''}
+              %a{:target=>'_blank', :href=>'https://www.ema-partners.com/'}
                 %img.main-alliance__icon{  :src => 'assets/img/play-button-1-copy.png' }/
               %a.main-alliance__button{:target=>'_blank', :href=>'https://www.ema-partners.com/'}Ver Más
     %section.main-solutions#solutions
@@ -290,34 +291,34 @@
         .main-experience__carousel
           .main-experiencie__item
             .row
-              .col-lg-6
+              .col-lg-6.d-flex.flex-column.justify-content-center
                 %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
                   Centurylink 
                 %p.main-general__description 
                   Trabajamos con Consultores Organizacionales hace aproximadamente 15 años. 15 años que han sido de construcción, trabajo en equipo y colaboración. Definitivamente, hemos encontrado en Consultores Organizacionales, un aliado estratégico para Recursos Humanos" Luz Helena Plaza Betancourth, Senior Manager HR Colombia - Ecuador.
               .col-lg-6
-                .d-flex.justify-content-center
-                  %img{:src=>'assets/img/captura-6.png'}
+                %a.d-flex.justify-content-center{:href=>"https://www.youtube.com/watch?v=pva8cqFNNck", :target=>"_blank"}
+                  %img{:src=>'assets/img/experiencias/experiencia1.png'}
           .main-experiencie__item
             .row
-              .col-lg-6
+              .col-lg-6.d-flex.flex-column.justify-content-center
                 %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
                   Trainee Basf
                 %p.main-general__description 
                   La oportunidad de ser un Trainee, gracias al relacionamiento que tiene Cia de Talentos, ha impactado en gran manera el desarrollo de mi carrera” Jesus Londoño Orozco, Trainee Basf. 
               .col-lg-6
-                .d-flex.justify-content-center
-                  %img{:src=>'assets/img/captura-6.png'}
+                %a.d-flex.justify-content-center{:href=>"https://youtu.be/q7Nti5a_GdA", :target=>"_blank"}
+                  %img{:src=>'assets/img/experiencias/experiencia2.png'}
           .main-experiencie__item
             .row
-              .col-lg-6
+              .col-lg-6.d-flex.flex-column.justify-content-center
                 %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
-                  Trainee DSM
+                  Trainee DSM 
                 %p.main-general__description 
                   Tú siempre estás enterado de cómo vas en el proceso de selección, en qué etapa vas, recibes las respuestas que tienen los entrevistadores sobre ti,todo el tiempo estás muy informado y puedes conectarte con ellos para tener una respuesta oportuna” Juan Diego Durán, Trainee DSM.  
               .col-lg-6
-                .d-flex.justify-content-center
-                  %img{:src=>'assets/img/captura-6.png'}
+                %a.d-flex.justify-content-center{:href=>"https://www.youtube.com/watch?v=uG1yGvsEBDA", :target=>"_blank"}
+                  %img{:src=>'assets/img/experiencias/experiencia3.png'}
 
     %section.main-featured
       .container.padding-top-bottom
@@ -467,6 +468,9 @@
         %p
           Copyright © 2019 
           %a{:href=>"https://sigma.la/"}Sigma Studios 
+    .main-whatsapp
+      %a{:target=>"_blank", :href=>"https://wa.me/573176383948"}
+        %img{:src=>"assets/img/whatsapp.png"}
 
     %script{src: 'assets/js/jquery.min.js' }
     %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
