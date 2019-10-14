@@ -71,7 +71,7 @@ body {
 @media (max-width: 768px) {
   .offcanvas-collapse {
     position: fixed;
-    top: 10rem;
+    top: 8.5rem;
     /* Height of navbar */
     bottom: 0;
     left: 100%;
@@ -2079,6 +2079,22 @@ button:focus {
   transition: .5s;
 }
 
+.main-footer .container-footer {
+  padding-left: 4rem;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-footer .container-footer {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-footer .container-footer {
+    padding-left: 0;
+  }
+}
+
 .main-footer .main-powered {
   background: #343434;
   padding: 4rem 0;
@@ -2199,8 +2215,15 @@ button:focus {
 }
 
 .main-footer .main-footer__list li {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #717171;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-footer .main-footer__list li {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -2231,8 +2254,17 @@ button:focus {
   font-size: 1rem;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-footer .main-footer__instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .main-footer .main-footer__instagram img {
-  width: 100%;
+  width: 22rem;
+  object-fit: contain;
 }
 
 .main-footer .main-footer__link {
@@ -2246,8 +2278,14 @@ button:focus {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-footer .main-footer__link {
+    text-align: center;
+  }
+}
+
 .main-footer .main-footer__link li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-transform: uppercase;
 }
 

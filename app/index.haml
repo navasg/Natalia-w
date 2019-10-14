@@ -55,14 +55,14 @@
           .main-brand__top
             .main-brand
               %a.navbar-brand{ :href => 'index.html' }
-                %img#iso{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/ 
+                %img#iso{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png', :alt=>"Logo Natalia Consultores"}/ 
           .main-brand__fixed
             .main-brand
               %a.navbar-brand{ :href => 'index.html' }
-                %img#iso{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/ 
+                %img#iso{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png', :alt=>"Logo Natalia Consultores" }/ 
           .main-brand.brand-responsive
             %a.navbar-brand{ :href => 'index.html' }
-              %img#iso{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/ 
+              %img#iso{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png', :alt=>"Logo Natalia Consultores"}/ 
             %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{ 'data-toggle' => 'offcanvas', :type => 'button' }
               %span.hamburger-box
               %span.hamburger-inner
@@ -130,7 +130,7 @@
         .main-banner__item
           .main-banner__text.wow.animated.fadeInRight{:style=>"visibility: visible; animation-delay: .3s  ;"}
             .main-banner__logo
-              %img{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
+              %img{ 'data-src' => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png', :alt=>"Logo Natalia Consultores" }/
             .main-banner__title
               %p Desarrollamos talentos 
             .main-banner__subtitle 
@@ -138,11 +138,11 @@
                 para transformar vidas y negocios 
           .main-banner__img
             %video{:autoplay => "true", "data-object-fit" => "cover", :loop => "", :muted => "", :playsinline => "", :poster => "", :preload => "auto"}
-              %source{"data-src" => "", :src => "assets/img/sliders/slider-1.mp4", :type => "video/mp4"}
+              %source{"data-src" => "", :src => "assets/img/slider-1.mp4", :type => "video/mp4", :alt=>"Video Banner"}
         -# .main-banner__item
         -#   .main-banner__text
         -#     .main-banner__logo
-        -#       %img{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
+        -#       %img{ 'data-src' => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
         -#     .main-banner__title
         -#       %p Lorem Ipsum
         -#     .main-banner__subtitle 
@@ -150,11 +150,11 @@
         -#         dolor sit amet consectetur, a
         -#         dipiscing elit aptent.
         -#   .main-banner__img
-        -#     %img{ :src => 'assets/img/image.png' }/
+        -#     %img{ 'data-src' => 'assets/img/image.png' }/
         -# .main-banner__item
         -#   .main-banner__text
         -#     .main-banner__logo
-        -#       %img{ :src => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
+        -#       %img{ 'data-src' => 'assets/img/logo-natalia-godoy-consultores-organizacionales-fuente-ajustada.png' }/
         -#     .main-banner__title
         -#       %p Lorem Ipsum
         -#     .main-banner__subtitle 
@@ -162,7 +162,7 @@
         -#         dolor sit amet consectetur, a
         -#         dipiscing elit aptent.
         -#   .main-banner__img
-        -#     %img{ :src => 'assets/img/image.png' }/
+        -#     %img{ 'data-src' => 'assets/img/image.png' }/
     %section.main-cal
       .container
         .row
@@ -174,7 +174,7 @@
                 + De 40.000 personas impactadas en los últimos años con nuestros programas de atracción.
           .col-lg-3.col-md-6
             .main-cal__item
-              %img.main-cal__img{ :src => 'assets/img/user.png' }/
+              %img.main-cal__img{ 'data-src' => 'assets/img/user.png', :alt=>"Icono usuario" }/
           .col-lg-3.col-md-6
             .main-cal__item
               %p.main-cal__title
@@ -183,7 +183,7 @@
                 + De 1.000 personas han sido vinculadas con las mejores empresas
           .col-lg-3.col-md-6
             .main-cal__item
-              %img.main-cal__img{ :src => 'assets/img/identification.png' }/
+              %img.main-cal__img{ "data-src" => 'assets/img/identification.png', :alt=>"Icono identification" }/
     %section.main-alliance
       .container.padding-top-bottom
         %h2.main-general__title.wow.animated.fadeInUp{:style=>"visibility: visible;"}
@@ -197,18 +197,18 @@
           .main-alliance__item
             .main-alliance__img
               %a{:target=>'_blank', :href=>'https://www.grupociadetalentos.com/es'}
-                %img{ :src => 'assets/img/alianza-imagen-1.png' }/
+                %img{ 'data-src' => 'assets/img/alianza-imagen-1.png', :alt=>"Logo alianza" }/
             .main-alliance__details
               %a{:target=>'_blank', :href=>'https://www.grupociadetalentos.com/es'}
-                %img.main-alliance__icon{ :src => 'assets/img/play-button-1-copy.png' }/
+                %img.main-alliance__icon{ 'data-src' => 'assets/img/play-button-1-copy.png', :alt=>"Icono Play" }/
               %a.main-alliance__button{:target=>'_blank', :href=>'https://www.grupociadetalentos.com/es'}Ver Más
           .main-alliance__item
             .main-alliance__img
-              %a{:target=>'_blank', :href=>'https://www.ema-partners.com/'}
-                %img{ :src => 'assets/img/captura-de-pantalla-2019-06-12-a-la-s-4-28-47-p-m.png' }/
+              %a{:target=>'_blank', :href=>'https://www.ema-partners.com/', :alt=>"Logo alianza"}
+                %img{ 'data-src' => 'assets/img/captura-de-pantalla-2019-06-12-a-la-s-4-28-47-p-m.png' }/
             .main-alliance__details
               %a{:target=>'_blank', :href=>'https://www.ema-partners.com/'}
-                %img.main-alliance__icon{  :src => 'assets/img/play-button-1-copy.png' }/
+                %img.main-alliance__icon{  'data-src' => 'assets/img/play-button-1-copy.png', :alt=>"Icono Play" }/
               %a.main-alliance__button{:target=>'_blank', :href=>'https://www.ema-partners.com/'}Ver Más
     %section.main-solutions#solutions
       .main-solutions__width
@@ -221,7 +221,7 @@
             .col-lg-4.main-solutions__colum
               .main-solutions__item
                 .main-solutions__icon
-                  %img{:src=>"assets/img/icon_9.png"}/
+                  %img{'data-src'=>"assets/img/icon_9.png", :alt=>"Icono soluciones" }/
                 .main-solutions__text
                   %p
                     Gestión de talento - programas de jóvenes, practicantes, trainees.
@@ -229,14 +229,14 @@
             .col-lg-4.main-solutions__colum
               .main-solutions__item
                 .main-solutions__icon
-                  %img{:src=>"assets/img/icon_8.png"}/
+                  %img{'data-src'=>"assets/img/icon_8.png", :alt=>"Icono soluciones"}/
                 .main-solutions__text
                   %p
                     Identificación de talento.
             .col-lg-4.main-solutions__colum
               .main-solutions__item
                 .main-solutions__icon
-                  %img{:src=>"assets/img/icon_7.png"}/
+                  %img{'data-src'=>"assets/img/icon_7.png", :alt=>"Icono soluciones"}/
                 .main-solutions__text
                   %p
                     Mentoría empresarial desarrollo de habilidades en doble vía mentor y mente
@@ -245,42 +245,42 @@
             .col-lg-4.main-solutions__colum
               .main-solutions__item
                 .main-solutions__icon
-                  %img{:src=>"assets/img/icon_6.png"}/
+                  %img{'data-src'=>"assets/img/icon_6.png", :alt=>"Icono soluciones"}/
                 .main-solutions__text
                   %p
                     Acompañamiento de carrera en todas las fases y situaciones
             .col-lg-4.main-solutions__colum
               .main-solutions__item
                 .main-solutions__icon
-                  %img{:src=>"assets/img/icon_5.png"}/
+                  %img{'data-src'=>"assets/img/icon_5.png", :alt=>"Icono soluciones"}/
                 .main-solutions__text
                   %p
                     Desarrollo de personas para el logrode su máximo potencial
             .col-lg-4.main-solutions__colum
               .main-solutions__item
                 .main-solutions__icon
-                  %img{:src=>"assets/img/icon_4.png"}/
+                  %img{'data-src'=>"assets/img/icon_4.png", :alt=>"Icono soluciones"}/
                 .main-solutions__text
                   %p
                     Mapeos de perfil, habilidades y potencial.
             .col-lg-4.main-solutions__colum
               .main-solutions__item
                 .main-solutions__icon
-                  %img{:src=>"assets/img/icon_3.png"}/
+                  %img{'data-src'=>"assets/img/icon_3.png", :alt=>"Icono soluciones"}/
                 .main-solutions__text
                   %p
                     Gestión completa de programas de selección y desarrollo
             .col-lg-4.main-solutions__colum
               .main-solutions__item
                 .main-solutions__icon
-                  %img{:src=>"assets/img/icon_2.png"}/
+                  %img{'data-src'=>"assets/img/icon_2.png", :alt=>"Icono soluciones"}/
                 .main-solutions__text
                   %p
                     Posicionamiento de marca empleadora diagnósticos y estrategias.
             .col-lg-4.main-solutions__colum
               .main-solutions__item
                 .main-solutions__icon
-                  %img{:src=>"assets/img/icon.png"}/
+                  %img{'data-src'=>"assets/img/icon.png", :alt=>"Icono soluciones"}/
                 .main-solutions__text
                   %p
                     Investigaciones analisis y desarrollo de contenidos y tendencias
@@ -298,7 +298,7 @@
                   Trabajamos con Consultores Organizacionales hace aproximadamente 15 años. 15 años que han sido de construcción, trabajo en equipo y colaboración. Definitivamente, hemos encontrado en Consultores Organizacionales, un aliado estratégico para Recursos Humanos" Luz Helena Plaza Betancourth, Senior Manager HR Colombia - Ecuador.
               .col-lg-6
                 %a.d-flex.justify-content-center{:href=>"https://www.youtube.com/watch?v=pva8cqFNNck", :target=>"_blank"}
-                  %img{:src=>'assets/img/experiencias/experiencia1.png'}
+                  %img{'data-src'=>'assets/img/experiencia1.png', :alt=>"Icono experiencia"}
           .main-experiencie__item
             .row
               .col-lg-6.d-flex.flex-column.justify-content-center
@@ -308,7 +308,7 @@
                   La oportunidad de ser un Trainee, gracias al relacionamiento que tiene Cia de Talentos, ha impactado en gran manera el desarrollo de mi carrera” Jesus Londoño Orozco, Trainee Basf. 
               .col-lg-6
                 %a.d-flex.justify-content-center{:href=>"https://youtu.be/q7Nti5a_GdA", :target=>"_blank"}
-                  %img{:src=>'assets/img/experiencias/experiencia2.png'}
+                  %img{'data-src'=>'assets/img/experiencia2.png', :alt=>"Icono experiencia"}
           .main-experiencie__item
             .row
               .col-lg-6.d-flex.flex-column.justify-content-center
@@ -318,7 +318,7 @@
                   Tú siempre estás enterado de cómo vas en el proceso de selección, en qué etapa vas, recibes las respuestas que tienen los entrevistadores sobre ti,todo el tiempo estás muy informado y puedes conectarte con ellos para tener una respuesta oportuna” Juan Diego Durán, Trainee DSM.  
               .col-lg-6
                 %a.d-flex.justify-content-center{:href=>"https://www.youtube.com/watch?v=uG1yGvsEBDA", :target=>"_blank"}
-                  %img{:src=>'assets/img/experiencias/experiencia3.png'}
+                  %img{'data-src'=>'assets/img/experiencia3.png', :alt=>"Icono experiencia"}
 
     %section.main-featured
       .container.padding-top-bottom
@@ -329,7 +329,7 @@
             %a.main-featured__link{:href=>'single-post.html'}
               .main-featured__card
                 .main-featured__bg
-                  %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
+                  %img{'data-src'=>'assets/img/eugene-chystiakov-1381895-unsplash.png', :alt=>"Imagen tendencias"}
                   .main-featured__date 
                     %p 
                       19
@@ -344,7 +344,7 @@
             %a.main-featured__link{:href=>'single-post.html'}
               .main-featured__card
                 .main-featured__bg
-                  %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
+                  %img{'data-src'=>'assets/img/eugene-chystiakov-1381895-unsplash.png', :alt=>"Imagen tendencias"}
                   .main-featured__date 
                     %p 
                       19
@@ -359,7 +359,7 @@
             %a.main-featured__link{:href=>'single-post.html'}
               .main-featured__card
                 .main-featured__bg
-                  %img{:src=>'assets/img/eugene-chystiakov-1381895-unsplash.png'}
+                  %img{'data-src'=>'assets/img/eugene-chystiakov-1381895-unsplash.png', :alt=>"Imagen tendencias"}
                   .main-featured__date 
                     %p 
                       19
@@ -383,94 +383,95 @@
           %a{:href=>"contact.html"} Ver Más
     %footer.main-footer#contact
       .main-footer__rrss
-        .container
+        .container  
           .row  
             .col-lg-3.main-footer__card
               .main-footer__responsive
                 %a{:target=>"_blank", :href=>"www.linkedin.com/company/consultores-organizacionales?trk=O-ovw-curr_pos"}
-                  %img{:src=> "assets/img/social-linkedin-circular-button_3@2x.png"}
+                  %img{'data-src'=> "assets/img/social-linkedin-circular-button_3@2x.png", :alt=>"Logo Linkedin"}
                 %a{:target=>"_blank", :href=>"https://www.facebook.com/ngconsultoresorg/"}
-                  %img.facebook-logo-in-circular-button-outlined-social-symbol{:src => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol@2x.png"}
+                  %img.facebook-logo-in-circular-button-outlined-social-symbol{'data-src' => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol@2x.png", :alt=>"Logo Facebook"}
                 %a{:target=>"_blank", :href=>"https://instagram.com/consultoresorg?utm_source=ig_profile_share&igshid=j9gnpdxmpqy8"}
-                  %img{:src=> "assets/img/social-linkedin-circular-button@2x.png"}
+                  %img{'data-src'=> "assets/img/social-linkedin-circular-button@2x.png", :alt=>"Logo Instagram"}
                 %a{:target=>"_blank", :href=>"https://www.youtube.com/channel/UCR1asI8Q6PybxSu2wWcSCEg?view_as=subscriber"}
-                  %img{:src=> "assets/img/social-linkedin-circular-button_2@2x.png"}
+                  %img{'data-src'=> "assets/img/social-linkedin-circular-button_2@2x.png", :alt=>"Logo Youtube"}
               .main-footer__content
                 %a{:target=>"_blank", :href=>"www.linkedin.com/company/consultores-organizacionales?trk=O-ovw-curr_pos"}
-                  %img{:src=> "assets/img/social-linkedin-circular-button_3.png"}
+                  %img{'data-src'=> "assets/img/social-linkedin-circular-button_3.png", :alt=>"Logo Linkedin"}
                   Linkedin 
             .col-lg-3.main-footer__card
               .main-footer__content
                 %a{:target=>"_blank", :href=>"https://www.facebook.com/ngconsultoresorg/"}
-                  %img.facebook-logo-in-circular-button-outlined-social-symbol{:src => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol.png", :srcset => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol@2x.png 2x,\n             assets/img/facebook-logo-in-circular-button-outlined-social-symbol@3x.png 3x"}/
+                  %img.facebook-logo-in-circular-button-outlined-social-symbol{'data-src' => "assets/img/facebook-logo-in-circular-button-outlined-social-symbol.png", :alt=>"Logo Facebook"}
                   Facebook 
             .col-lg-3.main-footer__card
               .main-footer__content
                 %a{:target=>"_blank", :href=>"https://instagram.com/consultoresorg?utm_source=ig_profile_share&igshid=j9gnpdxmpqy8"}
-                  %img{:src=> "assets/img/social-linkedin-circular-button.png"}
+                  %img{'data-src'=> "assets/img/social-linkedin-circular-button.png", :alt=>"Logo Instagram"}
                   Instagram 
             .col-lg-3.main-footer__card
               .main-footer__content
                 %a{:target=>"_blank", :href=>"https://www.youtube.com/channel/UCR1asI8Q6PybxSu2wWcSCEg?view_as=subscriber"}
-                  %img{:src=> "assets/img/social-linkedin-circular-button_2.png"}
+                  %img{'data-src'=> "assets/img/social-linkedin-circular-button_2.png", :alt=>"Logo Youtube"}
                   Youtube 
       .main-footer__info
         .main-footer__service.d-flex.justify-content-center
-          %img{:src=>"assets/img/group-12.png"}/
+          %img{'data-src'=>"assets/img/group-12.png", :alt=>"Logo Servicio empleo"}/
         .container.padding-top-bottom
           .row
             .col-lg-4
               .main-footer__logo
-                %img{:src=>'assets/img/logo.png'}
+                %img{'data-src'=>'assets/img/logo.png', :alt=>"Logo Natalia Consultores"}
               %ul.main-footer__list
                 %li.d-flex.align-items-center
-                  %img{:src=>"assets/img/facebook-places.png" }/
+                  %img{'data-src'=>"assets/img/facebook-places.png" , :alt=>"Icono mapa"}/
                   %p 
                     Calle 123 N° 7 - 07 Oficina 304 y 207
                 %li.d-flex.align-items-center
-                  %img{:src=>"assets/img/phone-receiver_2.png" }/
+                  %img{'data-src'=>"assets/img/phone-receiver_2.png", :alt=>"Icono teléfono" }/
                   %p
                     (+57) 619 46 16 - (+57) 215 45 23 - (+57) 637 50 17
                 %li
-                  %img{:src=>"assets/img/envelope.png" }/
+                  %img{'data-src'=>"assets/img/envelope.png", :alt=>"Icono correo" }/
                   %a{:href=>'mailto:contacto@consultoresorg.com'} contacto@consultoresorg.com
             .col-lg-4
-              .main-footer__logo
-                %h2.main-footer__title
-                  Mapa del sitio
-              %ul.main-footer__link
-                %li 
-                  %a{:href=>''}
-                    Soluciones
-                %li 
-                  %a{:href=>''}
-                    Desafíos
-                %li 
-                  %a{:href=>''}
-                    Oportunidades laborales
-                %li 
-                  %a{:href=>''}
-                    Tendencias
-                %li 
-                  %a{:href=>'about.html'}
-                    Conócenos
-                %li 
-                  %a{:href=>'contact.html'}
-                    Contáctanos
+              .container-footer
+                .main-footer__logo
+                  %h2.main-footer__title
+                    Mapa del sitio
+                %ul.main-footer__link
+                  %li 
+                    %a{:href=>''}
+                      Soluciones
+                  %li 
+                    %a{:href=>''}
+                      Desafíos
+                  %li 
+                    %a{:href=>''}
+                      Oportunidades laborales
+                  %li 
+                    %a{:href=>''}
+                      Tendencias
+                  %li 
+                    %a{:href=>'about.html'}
+                      Conócenos
+                  %li 
+                    %a{:href=>'contact.html'}
+                      Contáctanos
 
             .col-lg-4
               .main-footer__logo
                 %h2.main-footer__title
                   Instagram
               .main-footer__instagram
-                %img{:src=>'assets/img/group-2.png'}
+                %img{'data-src'=>'assets/img/group-2.png', :alt=>"Feed Instagram"}
       .main-powered 
         %p
           Copyright © 2019 
           %a{:href=>"https://sigma.la/"}Sigma Studios 
     .main-whatsapp
       %a{:target=>"_blank", :href=>"https://wa.me/573176383948"}
-        %img{:src=>"assets/img/whatsapp.png"}
+        %img{'data-src'=>"assets/img/whatsapp.png", :alt=>"Logo Whatsapp"}
 
     %script{src: 'assets/js/jquery.min.js' }
     %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
@@ -478,5 +479,6 @@
     %script{src: 'assets/js/slick.min.js' }
     %script{src: 'assets/js/setting-slick.js' }
     %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js' }
+    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js' }
     %script{src: 'assets/js/main.js' }
 

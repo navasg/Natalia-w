@@ -1049,6 +1049,15 @@ button:focus {
 }
 
 .main-footer {
+  .container-footer {
+    padding-left: 4rem;
+    @include respond-to(xs) {
+      padding-left: 0
+    }
+    @include respond-to(sm) {
+      padding-left: 0
+    }
+  }
 
   & .main-powered {
     background: #343434;
@@ -1153,16 +1162,22 @@ button:focus {
   & .main-footer__list {
     list-style: none;
     margin-top: 1.5rem;
-
     padding-left: 0;
 
+
+
     & li {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       color: #717171;
+      @include respond-to(sm) {
+        justify-content: center;
+        text-align: center;
+      }
       @include respond-to(xs) {
         display: flex;
         justify-content: center;
       }
+
 
       @include respond-to(xs) {
         margin: 1.5rem 0;
@@ -1186,8 +1201,14 @@ button:focus {
   }
 
   & .main-footer__instagram {
+    @include respond-to(sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     & img {
-      width: 100%;
+      width: 22rem;
+      object-fit: contain;
     }
   }
 
@@ -1199,8 +1220,12 @@ button:focus {
       text-align: center;
     }
 
+    @include respond-to(sm) {
+      text-align: center;
+    }
+
     & li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;      
       text-transform: uppercase;
 
       & a {
